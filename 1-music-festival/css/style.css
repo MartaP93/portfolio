@@ -273,7 +273,7 @@ header #menu a {
 #gallery .headliner-box {
     width: 33%;
     height: 250px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #gallery .headliner-box h3 {
