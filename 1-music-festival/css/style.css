@@ -2,14 +2,17 @@
 
 body {
     margin-bottom: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
 }
 
 header {
     height: 90px;
+    width: 100%;
     background-color: darkblue;
     position: fixed;
     top: 0;
-    width: 100%;
+    z-index: 2;
 }
 
 #festival-name p {
@@ -20,7 +23,6 @@ header {
 }
 
 header #menu li {
-    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -72,9 +74,9 @@ header #menu a {
 /* N A V I G A T I O N    B A R  - END */
 
 
-/* S E C T I O N  1  - START */
+/* S E C T I O N  1  - SLOGAN+SLIDES - START */
 
-section #pict1 {
+#container2 {
     height: 200vh;
     background-image: url(../img/music.JPG);
     background-size: cover;
@@ -85,9 +87,15 @@ section #pict1 {
 }
 
 #join-revolution {
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+
+#join-revolution #slogan {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,14 +103,79 @@ section #pict1 {
     text-align: center;
 }
 
-#join-revolution p {
-    font-size: 3vw;
+#join-revolution #slogan h1 {
+    width: 100%;
 }
+
+#join-revolution #slogan p {
+    font-size: 2vw;
+    width: 100%;
+    padding: 0;
+}
+
+/* S L I D E S  */
+
+#join-revolution #slides {
+    height: 100%;
+    width: 50%;
+    margin-top: 20%;
+    position: relative;
+}
+
+#join-revolution #slides #slides-container1 {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#join-revolution #slides img {
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+}
+
+/* A N I M A T I O N */
+
+#slides-container1 {
+    animation-name: slide-show;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-show {
+    0%, 40%, 80% {
+        transform: rotate(0.5deg);
+    }
+    10%, 90% {
+        padding-right: 3px;
+        padding-bottom: 3px;
+    }
+    20%, 60%, 100% {
+        transform: rotate(-0.5deg);
+    }
+    30%, 70% {
+        padding: 0;
+    }
+    50% {
+        padding-left: 3px;
+        padding-top: 3px;
+    }
+}
+
+
+/* S E C T I O N  1  - SLOGAN+SLIDES - END */
+
+
+/* S E C T I O N  1  - HEADLINERS - START */
 
 #headliners {
     width: 95%;
     height: 35%;
-    /* background-color: rgb(32,208,117); */
     background-color: #000;
     display: flex;
     justify-content: space-evenly;
@@ -110,13 +183,12 @@ section #pict1 {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #main-names {
     height: 20%;
     width: 100%;
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
     font-size: 2vw;
     display: flex;
     align-items: center;
@@ -150,8 +222,6 @@ section #pict1 {
     width: 100%;
     height: 100%;
     font-size: 4vw;
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
     top: 0;
     left: 0;
     margin: 0;
@@ -180,4 +250,24 @@ section #pict1 {
     background-color: blue;
 }
 
-/* S E C T I O N  1  - END */
+/* S E C T I O N  1  - HEADLINERS - END */
+
+
+
+/* F O O T E R  - START */
+
+#footer {
+    height: 15%;
+    background-color: rgb(197,15,185);
+    margin: 0;
+    padding: 0;
+}
+
+#footer p {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* F O O T E R  - END */
