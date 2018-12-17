@@ -195,13 +195,10 @@ header #menu a {
     justify-content: center;
 }
 
-#the-cure, #moby, #justice {
-    width: 32%;
-    height: 75%;
-}
-
 .headliner-box {
     position: relative;
+    width: 32%;
+    height: 75%;
 }
 
 .headliner-box a {
@@ -251,6 +248,64 @@ header #menu a {
 }
 
 /* S E C T I O N  1  - HEADLINERS - END */
+
+
+
+
+/* S E C T I O N  2  - LINE-UP - START */
+
+#section2 {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#gallery {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#gallery .headliner-box {
+    width: 33%;
+    height: 250px;
+    padding-bottom: 5px;
+}
+
+#gallery .headliner-box h3 {
+    text-align: center;
+}
+
+#jon-hopkins a h3:hover, #paul-kalkbrenner a h3:hover, #the-national a h3:hover {
+    background-color: deepskyblue;
+}
+
+#fever-ray a h3:hover, #primal-scream a h3:hover, #mogwai a h3:hover {
+    background-color: green;
+}
+
+#kiasmos a h3:hover, #sigur-ros a h3:hover, #band-1975 a h3:hover {
+    background-color: deeppink;
+}
+
+#kasabian a h3:hover, #underworld a h3:hover {
+    background-color: darkmagenta;
+}
+
+#martin-garrix a h3:hover, #the-twilight-sad a h3:hover {
+    background-color: orange;
+}
+
+#marshmello a h3:hover, #royksopp a h3:hover {
+    background-color: blue;
+}
+
+
+/* S E C T I O N  2  - LINE-UP - END */
 
 
 
