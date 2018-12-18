@@ -113,33 +113,9 @@ header #menu a {
     padding: 0;
 }
 
-/* S L I D E S  */
 
-#join-revolution #slides {
-    height: 100%;
-    width: 50%;
-    margin-top: 20%;
-    position: relative;
-}
 
-#join-revolution #slides #slides-container1 {
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-#join-revolution #slides img {
-    width: 98%;
-    height: 98%;
-    border-radius: 10px;
-}
-
-/* A N I M A T I O N */
+/* A N I M A T I O N
 
 #slides-container1 {
     animation-name: slide-show;
@@ -252,7 +228,7 @@ header #menu a {
 
 
 
-/* S E C T I O N  2  - LINE-UP - START */
+/* L I N E - U P   - START */
 
 #section2 {
     width: 100%;
@@ -288,7 +264,7 @@ header #menu a {
     background-color: green;
 }
 
-#kiasmos a h3:hover, #sigur-ros a h3:hover, #band-1975 a h3:hover {
+#kiasmos a h3:hover, #sigur-ros a h3:hover, #the-1975 a h3:hover {
     background-color: deeppink;
 }
 
@@ -305,7 +281,7 @@ header #menu a {
 }
 
 
-/* S E C T I O N  2  - LINE-UP - END */
+/* L I N E - U P - END */
 
 
 
