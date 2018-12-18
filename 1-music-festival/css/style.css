@@ -345,7 +345,79 @@ header #menu a {
     cursor: pointer;
 }
 
+#container3 .ticket-type button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* T I C K E T S  - END */
+
+
+/* C O N T A C T  - START */
+
+#section4 {
+    height: 700px;
+    background-image: url(../img/pica.JPG);
+    background-size: cover;
+    position: relative;
+    font-family: sans-serif;
+}
+
+#form-container {
+    width: 30%;
+    height: 60%;
+    background-color: dimgray;
+    opacity: 0.8;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container #form {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form-container #form .input {
+    height: 12%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#form-container #form #input2 {
+    height: 50%;
+}
+
+#form input, #form textarea, #form button {
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+#form textarea {
+    height: 150px;
+    padding-top: 15px;
+}
+
+#form button {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 4vh;
+    background-color: burlywood;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* C O N T A C T  - END */
 
 
 /* F O O T E R  - START */
