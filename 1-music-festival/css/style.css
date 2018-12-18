@@ -74,7 +74,7 @@ header #menu a {
 /* N A V I G A T I O N    B A R  - END */
 
 
-/* S E C T I O N  1  - SLOGAN+SLIDES - START */
+/* S E C T I O N  1  - JOIN THE REVOLUTION - START */
 
 #container2 {
     height: 200vh;
@@ -87,7 +87,7 @@ header #menu a {
 }
 
 #join-revolution {
-    font-size: 2.5vw;
+    font-size: 4.5vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -105,49 +105,39 @@ header #menu a {
 
 #join-revolution #slogan h1 {
     width: 100%;
+    animation: size 4s infinite;
 }
 
 #join-revolution #slogan p {
-    font-size: 2vw;
+    font-size: 2.3vw;
     width: 100%;
     padding: 0;
+    animation: size1 4s infinite;
+    animation-delay: 2s;
 }
 
-
-
-/* A N I M A T I O N
-
-#slides-container1 {
-    animation-name: slide-show;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes slide-show {
-    0%, 40%, 80% {
-        transform: rotate(0.5deg);
-    }
-    10%, 90% {
-        padding-right: 3px;
-        padding-bottom: 3px;
-    }
-    20%, 60%, 100% {
-        transform: rotate(-0.5deg);
-    }
-    30%, 70% {
-        padding: 0;
+@keyframes size {
+    0%, 100% {
+        font-size: 4.5vw;
     }
     50% {
-        padding-left: 3px;
-        padding-top: 3px;
+        font-size: 4.8vw;
     }
 }
 
+@keyframes size1 {
+    0%, 100% {
+        font-size: 2.3vw;
+    }
+    50% {
+        font-size: 2.5vw;
+    }
+}
 
-/* S E C T I O N  1  - SLOGAN+SLIDES - END */
+/* S E C T I O N  1  - JOIN THE REVOLUTION - END */
 
 
-/* S E C T I O N  1  - HEADLINERS - START */
+/* HOME PAGE - HEADLINERS - START */
 
 #headliners {
     width: 95%;
@@ -223,16 +213,15 @@ header #menu a {
     background-color: blue;
 }
 
-/* S E C T I O N  1  - HEADLINERS - END */
-
-
+/* HOME PAGE - HEADLINERS - END */
 
 
 /* L I N E - U P   - START */
 
 #section2 {
+    margin-top: 90px;
     width: 100%;
-    height: 300vh;
+    height: 1600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,6 +230,7 @@ header #menu a {
 
 #gallery {
     width: 95%;
+    height: 98%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -248,7 +238,7 @@ header #menu a {
 
 #gallery .headliner-box {
     width: 33%;
-    height: 250px;
+    height: 16%;
     margin-bottom: 5px;
 }
 
@@ -280,23 +270,98 @@ header #menu a {
     background-color: blue;
 }
 
-
 /* L I N E - U P - END */
 
+
+/* T I C K E T S  - START */
+
+#section3 {
+    font-family: 'Major Mono Display', monospace;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#container3 {
+    width: 99%;
+    height: 98%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container3 .ticket-type {
+    background-color:  rgb(197,15,185);
+    height: 90%;
+    width: 30%;
+    border:burlywood 2px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container3 .ticket-type .x-days {
+    width: 100%;
+    height: 30%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 .ticket-type .buy {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#container3 .ticket-type h3 {
+    font-size: 8vh;
+}
+
+#container3 .ticket-type p {
+    font-size: 4vh;
+    width: 100%;
+}
+
+#container3 .ticket-type button {
+    height: 30%;
+    width: 60%;
+    font-size: 5vh;
+    color: #fff;
+    border: deeppink 0.6px solid;
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: #000;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* T I C K E T S  - END */
 
 
 /* F O O T E R  - START */
 
 #footer {
-    height: 15%;
+    height: 15vh;
     background-color: rgb(197,15,185);
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer p {
     margin: 0;
-    padding: 20px 0;
     text-align: center;
     font-size: 12px;
 }
