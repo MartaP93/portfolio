@@ -1,0 +1,144 @@
+@media all and (max-width: 992px) {
+   
+    /* CONTACT */
+
+    #form-container {
+        width: 45%;
+        height: 70%;
+        top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* NAV BAR */
+
+    header {
+        height: 28vh;
+    }
+
+    #container1 #festival-name {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #container1 #festival-name p {
+        width: 100%;
+        padding-top: 3%;
+        font-size: 6.5vh;
+    }
+    
+    #container1 #navigation {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #section1, #section2, #section3, #section4 {
+        margin-top: 28vh;
+    }
+
+    /* HEADLINERS */
+
+    #join-revolution {
+        height: 35%;
+    }
+
+    #headliners {
+        height: 55%;
+    }
+
+    #main-names {
+        height: 10%;
+    }
+
+    .headliner-box {
+        width: 45%;
+        height: 40%;
+    }
+
+    /* LINE UP */
+
+    #gallery {
+        justify-content: space-evenly;
+    }
+
+    #gallery .headliner-box {
+        width: 45%;
+        height: 10%;
+    }
+
+    /* TICKETS */
+
+    #container3 .ticket-type {
+        width: 90%;
+        height: 30%;
+    }
+
+    #container3 .ticket-type h3 {
+        font-size: 4vh;
+    }
+    
+    #container3 .ticket-type p {
+        font-size: 2vh;
+    }
+    
+    #container3 .ticket-type button {
+        font-size: 3vh;
+    }
+
+   /* CONTACT */
+
+    #section4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-container {
+        width: 80%;
+        height: 80%;
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* NAV BAR */
+    #container1 #festival-name p {
+        font-size: 5vh;
+    }
+
+    /* HEADLINERS */
+
+    #join-revolution {
+        height: 30%;
+    }
+
+    #headliners {
+        height: 65%;
+    }
+
+    #main-names {
+        height: 5%;
+    }
+
+    .headliner-box {
+        width: 90%;
+        height: 30%;
+    }
+
+    /* LINE UP */
+
+    #section2 {
+        height: 3000px;
+    }
+
+    #gallery {
+        justify-content: space-evenly;
+    }
+
+    #gallery .headliner-box {
+        width: 90%;
+        height: 5.3%;
+    }
+}

@@ -7,67 +7,73 @@ body {
 }
 
 header {
-    height: 90px;
+    height: 14vh;
     width: 100%;
     background-color: darkblue;
     position: fixed;
     top: 0;
     z-index: 2;
-}
-
-#festival-name p {
-    font-family: 'Major Mono Display', monospace;
-    padding: 0 20px;
-    margin: 20px 0px;
-    font-size: 40px;
-}
-
-header #menu li {
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-header #menu a {
-    text-decoration: none;
+    display: flex;
 }
 
 #container1 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-#festival-name {
+#container1 #festival-name {
+    display: flex;
     justify-content: flex-start;
-    width: 40%;
+    align-items: center;
+    width: 43%;
+    padding: 0;
+    margin: 0;
 }
 
-#navigation {
-    justify-content: flex-end;
+#container1 #festival-name p {
+    font-family: 'Major Mono Display', monospace;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 5vh;
+    text-align: center;
+}
+
+#container1 #navigation {
+    width: 57%;
     display: flex;
-    width: 60%;
-    margin-right: 30px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#menu {
+#container1 #navigation #menu {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
     justify-content: space-evenly;
-    display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
-#menu li {
+#container1 #navigation #menu li {
+    font-size: 2.5vh;
+    text-transform: uppercase;
     padding: 20px 20px;
     list-style-type: none;
     cursor: pointer;
 }
 
-#menu li a {
+#container1 #navigation #menu li a {
+    text-decoration: none;
     color: #fff;
 }
 
-#menu li a:hover {
+#container1 #navigation #menu li a:hover {
     color: deeppink;
 }
 
-#menu .current a {
+#container1 #navigation #menu .current a {
     color: burlywood;
 }
 
@@ -77,17 +83,16 @@ header #menu a {
 /* S E C T I O N  1  - JOIN THE REVOLUTION - START */
 
 #container2 {
-    height: 200vh;
+    height: 180vh;
     background-image: url(../img/music.JPG);
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 #join-revolution {
-    font-size: 4.5vw;
+    font-size: 4.5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -219,7 +224,7 @@ header #menu a {
 /* L I N E - U P   - START */
 
 #section2 {
-    margin-top: 90px;
+    margin-top: 14vh;
     width: 100%;
     height: 1600px;
     display: flex;
@@ -277,12 +282,12 @@ header #menu a {
 
 #section3 {
     font-family: 'Major Mono Display', monospace;
-    height: 500px;
+    height: 80vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 14vh;
 }
 
 #container3 {
@@ -292,6 +297,7 @@ header #menu a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #container3 .ticket-type {
@@ -311,16 +317,23 @@ header #menu a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#container3 .ticket-type .enjoy, #container3 .ticket-type .buy {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container3 .ticket-type .enjoy {
+    height: 45%;
 }
 
 #container3 .ticket-type .buy {
-    width: 100%;
-    height: 70%;
+    height: 25%;
     display: flex;
-    justify-content: center;
-    align-content: space-evenly;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 #container3 .ticket-type h3 {
@@ -333,7 +346,7 @@ header #menu a {
 }
 
 #container3 .ticket-type button {
-    height: 30%;
+    height: 80%;
     width: 60%;
     font-size: 5vh;
     color: #fff;
@@ -356,7 +369,7 @@ header #menu a {
 /* C O N T A C T  - START */
 
 #section4 {
-    height: 700px;
+    height: 90vh;
     background-image: url(../img/pica.JPG);
     background-size: cover;
     position: relative;
@@ -364,7 +377,7 @@ header #menu a {
 }
 
 #form-container {
-    width: 30%;
+    width: 35%;
     height: 60%;
     background-color: dimgray;
     opacity: 0.8;
@@ -386,26 +399,26 @@ header #menu a {
 }
 
 #form-container #form .input {
-    height: 12%;
     width: 100%;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
 }
 
-#form-container #form #input2 {
+#form-container #form .input-short {
+    height: 15%;
+}
+
+#form-container #form #input-tall {
     height: 50%;
 }
 
 #form input, #form textarea, #form button {
     width: 95%;
-    height: 100%;
+    height: 95%;
     border-radius: 5px;
     border: none;
     text-align: center;
-}
-
-#form textarea {
-    height: 150px;
-    padding-top: 15px;
 }
 
 #form button {
@@ -415,7 +428,6 @@ header #menu a {
     font-weight: bold;
     cursor: pointer;
 }
-
 
 /* C O N T A C T  - END */
 
