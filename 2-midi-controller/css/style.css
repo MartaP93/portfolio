@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-.pad, #record, #play, #speed-up, #slow-down, .key, .black-key  {
+#record, #play, #speed-up, #slow-down {
     cursor: pointer;
 }
 
@@ -32,6 +32,8 @@ body {
     width: 100%;
     display: flex;
 }
+
+/* P A D S - START */
 
 #pads {
     width: 60%;
@@ -55,6 +57,10 @@ body {
     width: 27%;
     height: 40%;
 }
+
+/* P A D S - END */
+
+/* B U T T O N S - START*/
 
 #mixers {
     width: 40%;
@@ -123,6 +129,10 @@ body {
     align-items: center;
 }
 
+/* B U T T O N S - END*/
+
+/* K E Y B O A R D - START */
+
 #keys-container {
     width: 80%;
     height: 95%;
@@ -180,3 +190,4 @@ body {
     z-index: 2;
 }
 
+/* K E Y B O A R D - END */
