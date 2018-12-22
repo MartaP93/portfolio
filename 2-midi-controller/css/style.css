@@ -123,7 +123,6 @@ body {
     align-items: center;
 }
 
-
 #keys-container {
     width: 80%;
     height: 95%;
@@ -135,7 +134,7 @@ body {
 #keys-container #keys {
     width: 95%;
     height: 90%;
-    background-color: violet;
+    background-color: #000;
     display: flex;
 }
 
@@ -178,5 +177,6 @@ body {
     top: -0.5%;
     right: -33%;
     border-radius: 3px;
-    z-index: 1;
+    z-index: 2;
 }
+

@@ -1,0 +1,32 @@
+.tap-pad {
+    transition: all 0.3s;
+    border-color: deeppink;
+    transform: scale(0.98,0.98);
+}
+
+.button-click {
+    transition: all 0.2s;
+    border: #ddd 1px solid;
+}
+
+.speeder-click {
+    transition: all 0.3s;
+    transform: scale(0.95,0.95);
+}
+
+.green-key {
+    background-color: rgb(71, 219, 96);
+    transition: all 0.5s;
+
+}
+
+.pink-key {
+    background-color: rgb(235, 150, 72);
+    transition: all 0.5s;
+
+}
+
+.blue-key {
+    background-color: rgb(106, 141, 240);
+    transition: all 0.5s;
+}
