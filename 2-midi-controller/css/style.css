@@ -1,0 +1,182 @@
+body {
+    color: #fff;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+#background {
+    height: 97vh;
+    width: 100%;
+    background-image: url(../img/midi-device.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad, #record, #play, #speed-up, #slow-down, .key, .black-key  {
+    cursor: pointer;
+}
+
+#controller {
+    background-color: #333;
+    height: 300px;
+    width: 550px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+#pads {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pads #pads-container {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#pads #pads-container .pad {
+    border: #ff3 2px solid;
+    width: 27%;
+    height: 40%;
+}
+
+#mixers {
+    width: 40%;
+    height: 100%;
+    background-color: #444;
+    display: flex;
+    box-sizing: border-box;
+    border: #333 10px solid;
+}
+
+#mixers .column {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mixers .column #loopers-container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+#mixers .column #loopers-container #record {
+    height: 30px;
+    width: 50px;
+    background-color: red;
+    opacity: 0.8;
+    border-radius: 5px;
+    border: #000 2px solid;
+}
+
+#mixers .column #loopers-container #play {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(44, 187, 8);
+    border: #000 2px solid;
+}
+
+#record, #play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mixers .column #speeders-container {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#mixers .column #speeders-container .speeder {
+    height: 25px;
+    width: 60px;
+    background-color: #000;
+    border: orange 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#keys-container {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#keys-container #keys {
+    width: 95%;
+    height: 90%;
+    background-color: violet;
+    display: flex;
+}
+
+#segment1, #segment3 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+#segment2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+#keys .key {
+    background-color: white;
+    height: 100%;
+    border-radius: 3px;
+    border: #555 1px solid;
+}
+
+#segment1 .key, #segment3 .key {
+    width: 33%;
+}
+
+#segment2 .key {
+    width: 24%;
+}
+
+#key1, #key2, #key4, #key5, #key6, #key8, #key9 {
+    position: relative;
+}
+
+.black-key {
+    width: 60%;
+    height: 60%;
+    background-color: #111;
+    position: absolute;
+    top: -0.5%;
+    right: -33%;
+    border-radius: 3px;
+    z-index: 1;
+}
