@@ -66,27 +66,83 @@ body {
 
 /* P A D S - END */
 
-/* S P E A K E R  - START */
+/* S P E A K E R + N O T E S  - START */
 
 #speaker {
     width: 40%;
     height: 100%;
-    background-color: #999;
-    box-sizing: border-box;
-    border: #333 15px solid;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #speaker-image {
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 80%;
     background-image: url(../img/speaker.jpg);
     background-size: contain;
+    box-sizing: border-box;
+    border: #999 2px solid;
+    position: relative;
 }
 
-/* S P E A K E R  - END */
+#speaker-image i {
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+}
+
+.notes {
+    animation: play 0.3s ease-in-out;
+}
+
+#speaker-image #note1 {
+    color: skyblue;
+    top: 5%;
+    left: 30%;
+}
+
+#speaker-image #note2 {
+    color: deeppink;
+    top: 30%;
+    left: 35%;
+    animation-delay: 0.1s;
+}
+
+#speaker-image #note3 {
+    color: darkmagenta;
+    top: 10%;
+    left: 50%;
+}
+
+#speaker-image #note4 {
+    color: green;
+    top: 25%;
+    left: 70%;
+    animation-delay: 0.1s;
+}
+
+#speaker-image #note5 {
+    color: orange;
+    top: 0;
+    left: 80%;
+}
+
+@keyframes play {
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(10px, -20px);
+    }
+}
+
+
+/* S P E A K E R + N O T E S - END */
 
 /* K E Y B O A R D - START */
 
@@ -143,7 +199,7 @@ body {
 
 .black-key {
     width: 60%;
-    height: 60%;
+    height: 70%;
     background-color: #111;
     position: absolute;
     top: -0.5%;
