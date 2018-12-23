@@ -56,80 +56,37 @@ body {
     border: #ff3 2px solid;
     width: 27%;
     height: 40%;
+    transition: all 0.1s;
+}
+
+.pad-tap {
+    transform: scale(0.95,0.95);
+    background-color: rgba(219, 240, 36, 0.5);
 }
 
 /* P A D S - END */
 
-/* B U T T O N S - START*/
+/* S P E A K E R  - START */
 
-#mixers {
+#speaker {
     width: 40%;
     height: 100%;
-    background-color: #444;
-    display: flex;
+    background-color: #999;
     box-sizing: border-box;
-    border: #333 10px solid;
-}
-
-#mixers .column {
-    height: 100%;
-    width: 50%;
+    border: #333 15px solid;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#mixers .column #loopers-container {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
+#speaker-image {
+    width: 95%;
+    height: 95%;
+    background-image: url(../img/speaker.jpg);
+    background-size: contain;
 }
 
-#mixers .column #loopers-container #record {
-    height: 30px;
-    width: 50px;
-    background-color: red;
-    opacity: 0.8;
-    border-radius: 5px;
-    border: #000 2px solid;
-}
-
-#mixers .column #loopers-container #play {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: rgb(44, 187, 8);
-    border: #000 2px solid;
-}
-
-#record, #play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#mixers .column #speeders-container {
-    height: 70%;
-    width: 80%;
-    display: flex;
-    align-content: flex-end;
-    flex-wrap: wrap;
-}
-
-#mixers .column #speeders-container .speeder {
-    height: 25px;
-    width: 60px;
-    background-color: #000;
-    border: orange 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* B U T T O N S - END*/
+/* S P E A K E R  - END */
 
 /* K E Y B O A R D - START */
 
@@ -165,6 +122,11 @@ body {
     height: 100%;
     border-radius: 3px;
     border: #555 1px solid;
+    transition: all 0.5s;
+}
+
+.key-click {
+    box-shadow: inset 3px 2px 3px #999, inset -3px 2px 3px #999;
 }
 
 #segment1 .key, #segment3 .key {
@@ -188,6 +150,9 @@ body {
     right: -33%;
     border-radius: 3px;
     z-index: 2;
+    transition: all 0.3s;
 }
 
-/* K E Y B O A R D - END */
+.black-key-click {
+    box-shadow: inset 3px 2px 3px #666, inset -3px 2px 3px #666;
+}
