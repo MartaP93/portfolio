@@ -1,16 +1,13 @@
 "use strict"
 
-let button = Array.from(document.querySelectorAll(".add-to-basket"));
-let image = Array.from(document.querySelectorAll("img"));
-let name = Array.from(document.querySelectorAll(".name"));
-
-function addToBasket(i) {
-    console.log(button[i]);
+let plus = Array.from(document.querySelectorAll(".plus"));
+let minus = Array.from(document.querySelectorAll(".minus"));
+var input = $("input");
+let myarr = [];
 
 
-    // console.log(button);
 
-}
+var $inputValues = $(input).map(function() {
+    console.log($(this).val());
+});
 
-button.forEach(addEventListener('click', addToBasket));
-// addToBasket();

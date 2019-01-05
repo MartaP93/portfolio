@@ -102,12 +102,12 @@ body {
 
 #products .product-container .name-add .add {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #products .product-container .name-add .add button {
-    width: 60%;
+    width: 25%;
     height: 50%;
     font-size: 1.5vw;
     background-color: gold;
@@ -118,21 +118,16 @@ body {
     align-items: center;
 }
 
-#header-2 {
-    justify-content: center;
-}
-
-#header-2 h2 {
-    color: #fff;
+#products .product-container .name-add .add input {
+    width: 30%;
+    height: 45%;
     text-align: center;
-    font-size: 3vw;
-    font-style: italic;
-    font-weight: 200;
+    font-size: 1.5vw;
 }
 
-#header-2 #your-basket {
-    height: 85vh;
-    background-color: rgb(198, 210, 214);
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 @media all and (max-width: 768px) {
@@ -156,7 +151,7 @@ body {
 
 
 
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-} */
+}
