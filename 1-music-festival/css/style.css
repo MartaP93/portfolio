@@ -301,7 +301,7 @@ header {
 }
 
 #container3 .ticket-type {
-    background-color:  rgb(197,15,185);
+    background-color:  rgb(37, 143, 99);
     height: 90%;
     width: 30%;
     border:burlywood 2px solid;
@@ -328,11 +328,11 @@ header {
 }
 
 #container3 .ticket-type .enjoy {
-    height: 45%;
+    height: 35%;
 }
 
 #container3 .ticket-type .buy {
-    height: 25%;
+    height: 35%;
     display: flex;
 }
 
@@ -346,7 +346,7 @@ header {
 }
 
 #container3 .ticket-type button {
-    height: 80%;
+    height: 60%;
     width: 60%;
     font-size: 5vh;
     color: #fff;
