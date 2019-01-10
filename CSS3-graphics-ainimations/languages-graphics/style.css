@@ -1,0 +1,105 @@
+.box {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#clock-square1 {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(255, 84, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#clock-square2 {
+    height: 70%;
+    width: 70%;
+    background-color: rgb(83, 195, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle1 {
+    height: 70%;
+    width: 70%;
+    background-color: rgb(252, 253, 226);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle2 {
+    height: 5%;
+    width: 5%;
+    background-color: rgb(16, 53, 82);
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(-2px);
+}
+
+.arow {
+    animation: rotate 3s linear infinite;
+}
+
+#arow1 {
+    height: 1000%;
+    width: 100%;
+    background-color: rgb(16, 53, 82);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -420%;
+    left: 10%;
+}
+
+#arow2 {
+    height: 1500%;
+    width: 100%;
+    background-color: rgb(16, 53, 82);
+    border-radius: 5px;
+    position: absolute;
+    bottom: -670%;
+    left: 15%;
+    display: flex;
+    justify-content: flex-start;
+    animation-delay: 0.5s;
+}
+
+.hide {
+    height: 48%;
+    width: 100%;
+    background-color: rgb(252, 253, 226);
+
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+}
+}
+
+#trapeze {
+    width: 60px;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 40px solid rgb(16, 53, 82);
+	margin: 20px auto 0;
+    position: absolute;
+    top: -60px;
+    left: 15px;
+}
+
+#block1 {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(255, 84, 56);
+    position: absolute;
+    top: -25px;
+}
