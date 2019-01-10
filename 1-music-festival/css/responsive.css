@@ -69,20 +69,22 @@
 
     /* TICKETS */
 
-    #container3 .ticket-type {
-        width: 90%;
+    #section3 .ticket-type {
+        width: 70%;
         height: 30%;
+        background-size: cover;
+        background-position-y: 60%;
     }
 
-    #container3 .ticket-type h3 {
+    #section3 .ticket-type h3 {
         font-size: 4vh;
     }
     
-    #container3 .ticket-type p {
+    #section3 .ticket-type p {
         font-size: 2vh;
     }
     
-    #container3 .ticket-type button {
+    #section3 .ticket-type button {
         font-size: 3vh;
         width: 40%;
     }
@@ -141,5 +143,11 @@
     #gallery .headliner-box {
         width: 90%;
         height: 5.3%;
+    }
+
+    /* T I C K E T S */
+
+    #section3 .ticket-type {
+        width: 80%;
     }
 }

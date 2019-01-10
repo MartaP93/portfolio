@@ -282,35 +282,43 @@ header {
 
 #section3 {
     font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
     height: 80vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 14vh;
-}
-
-#container3 {
-    width: 99%;
-    height: 98%;
     background-color: #000;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 14vh;
 }
 
-#container3 .ticket-type {
-    background-color:  rgb(37, 143, 99);
+#section3 .ticket-type {
+    background-color:  rgb(226, 226, 226);
     height: 90%;
     width: 30%;
     border:burlywood 2px solid;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 150%;
 }
 
-#container3 .ticket-type .x-days {
+#section3 #ticket1 {
+    background-image: url(../img/city.jpg);
+}
+
+#section3 #ticket2 {
+    background-image: url(../img/slide4.JPG);
+}
+
+#section3 #ticket3 {
+    background-image: url(../img/slide2.JPG);
+}
+
+#section3 .ticket-type .x-days {
     width: 100%;
     height: 30%;
     background-color: burlywood;
@@ -320,32 +328,34 @@ header {
     text-align: center;
 }
 
-#container3 .ticket-type .enjoy, #container3 .ticket-type .buy {
+#section3 .ticket-type .enjoy, #section3 .ticket-type .buy {
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-#container3 .ticket-type .enjoy {
+#section3 .ticket-type .enjoy {
     height: 35%;
 }
 
-#container3 .ticket-type .buy {
+#section3 .ticket-type .buy {
     height: 35%;
     display: flex;
 }
 
-#container3 .ticket-type h3 {
+#section3 .ticket-type h3 {
     font-size: 8vh;
 }
 
-#container3 .ticket-type p {
+#section3 .ticket-type p {
     font-size: 4vh;
+    text-shadow: 2px 2px #555;
+    height: 100%;
     width: 100%;
 }
 
-#container3 .ticket-type button {
+#section3 .ticket-type button {
     height: 60%;
     width: 60%;
     font-size: 5vh;
@@ -358,7 +368,7 @@ header {
     cursor: pointer;
 }
 
-#container3 .ticket-type button:hover {
+#section3 .ticket-type button:hover {
     background-color: #fff;
     color: #000;
 }
