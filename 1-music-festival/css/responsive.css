@@ -47,13 +47,21 @@
         height: 55%;
     }
 
-    #main-names {
+    #headliners #main-names {
         height: 10%;
     }
 
-    .headliner-box {
+    #headliners .headliner-box {
         width: 45%;
         height: 40%;
+    }
+
+    #headliners #justice {
+        width: 94%;
+    }
+
+    #headliners #justice a,  #justice h3 {
+        width: 48%;
     }
 
     /* LINE UP */
@@ -116,19 +124,24 @@
     #join-revolution {
         height: 30%;
     }
-
+    
     #headliners {
-        height: 65%;
+        height: 67%;
     }
 
     #main-names {
-        height: 5%;
+        height: 3%;
     }
 
-    .headliner-box {
+    #headliners .headliner-box {
         width: 90%;
         height: 30%;
     }
+
+    #headliners #justice a, #headliners #justice h3 {
+        width: 100%;
+    }
+
 
     /* LINE UP */
 
