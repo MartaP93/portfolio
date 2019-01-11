@@ -97,6 +97,10 @@
         width: 40%;
     }
 
+    #section3 .ticket-type .x-days {
+        border-bottom: none;
+    }
+
    /* CONTACT */
 
     #section4 {

@@ -84,7 +84,7 @@ header {
 
 #container2 {
     height: 180vh;
-    background-image: url(../img/music.JPG);
+    background-image: url(../img/background2.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -97,6 +97,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 60%;
+    text-shadow: 2px 2px darkblue;
 }
 
 #join-revolution #slogan {
@@ -110,34 +111,26 @@ header {
 
 #join-revolution #slogan h1 {
     width: 100%;
-    animation: size 4s infinite;
+    animation: move 1s infinite;
 }
 
 #join-revolution #slogan p {
     font-size: 2.3vw;
     width: 100%;
     padding: 0;
-    animation: size1 4s infinite;
-    animation-delay: 2s;
 }
 
-@keyframes size {
-    0%, 100% {
-        font-size: 4.5vw;
+@keyframes move {
+    20%, 60% {
+        transform: rotateX(10deg);
+        transform: translate(0, 5px);
     }
-    50% {
-        font-size: 4.8vw;
+    40%, 80% {
+        transform: rotateY(-10deg);
+        transform: translate(-5px, 0);
     }
 }
 
-@keyframes size1 {
-    0%, 100% {
-        font-size: 2.3vw;
-    }
-    50% {
-        font-size: 2.5vw;
-    }
-}
 
 /* S E C T I O N  1  - JOIN THE REVOLUTION - END */
 
@@ -321,7 +314,8 @@ header {
 #section3 .ticket-type .x-days {
     width: 100%;
     height: 30%;
-    background-color: burlywood;
+    background-color: transparent;
+    border-bottom: burlywood 3px solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,6 +340,7 @@ header {
 
 #section3 .ticket-type h3 {
     font-size: 8vh;
+    text-shadow: 2px 2px #555;
 }
 
 #section3 .ticket-type p {
@@ -445,8 +440,8 @@ header {
 /* F O O T E R  - START */
 
 #footer {
-    height: 15vh;
-    background-color: rgb(197,15,185);
+    height: 10vh;
+    background-color: deeppink;
     margin: 0;
     padding: 0;
     display: flex;
