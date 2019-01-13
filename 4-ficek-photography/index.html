@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photography</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <button id="open-menu">MORE INFO</button>
+
+    <div id="side-bar">
+        <h1>Welcome!</h1>
+        <p>Interested in having the photo session? Do not forget to leave your contact details via the form below!</p>
+        <form id="form">
+            <input type="text" placeholder="Enter your name here">
+            <input type="email" placeholder="Enter your e-mail address">
+            <textarea name="" placeholder="Leave a message"></textarea>
+            <button>SEND</button>
+        </form>
+        <button id="open-contact" onclick=toggleSidebar()>CONTACT</button>
+    </div>
     <div id="gallery">
-        <div class="photo-container" id="photo-container1"></div>
+        <div class="photo-container" id="photo-container1">
+            <div id="where">
+                <h3>Photo sessions</h3>
+                <p>Warszawa</p>
+                <p>Katowice</p>
+            </div>
+        </div>
         <div class="photo-container" id="photo-container2"></div>
         <div class="photo-container" id="photo-container3"></div>
         <div class="photo-container" id="photo-container4"></div>
@@ -30,12 +45,8 @@
         </address>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

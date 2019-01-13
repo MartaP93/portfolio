@@ -4,25 +4,116 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-#open-menu {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(43, 116, 64);
+/* S I D E - B A R - START */
+
+#side-bar {
+    position: fixed;
+    top: 0;
+    right: -25%;
+    height: 500px;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 20px;
+    transition: all 0.5s linear;
+}
+
+#side-bar.active {
+    right: 0;
+}
+
+#side-bar h1, #side-bar p, #side-bar form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-bar h1 {
+    height: 10%;
+    margin: 0;
+}
+
+#side-bar p {
+    height: 12%;
+    text-align: justify;
+}
+
+#side-bar form {
+    height: 60%;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#side-bar form input, #side-bar form textarea, #side-bar form button {
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+}
+
+#side-bar form input, #side-bar form textarea {
+    outline: none;
+}
+
+#side-bar form input:focus, #side-bar form textarea:focus {
+    background-color: rgb(243, 226, 241)
+}
+
+#side-bar form textarea {
+    height: 35%;
+    padding-top: 8px;
+}
+
+#side-bar form button {
+    width: 50%;
+    background-color: rgb(179, 27, 133);
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#side-bar form button:hover {
+    background-color: rgb(177, 139, 36);
+    transition: all 0.5s;
+}
+
+/* S I D E - B A R - END */
+
+/* C O N T A C T - B U T T O N - START */
+
+#open-contact {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(179, 27, 133);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
     border-radius: 50%;
     border: none;
-    position: fixed;
+    position: absolute;
     top: 20px;
-    right: 20px;
+    left: -120px;
     cursor: pointer;
     font-weight: bold;
 }
 
-#open-menu:hover {
-    background-color: rgba(177, 139, 36, 0.89);
+#open-contact:hover {
+    background-color: rgb(177, 139, 36);
     transition: all 0.5s;
 }
+
+#open-contact:focus {
+    outline: none;
+}
+
+/* C O N T A C T - B U T T O N - END */
+
+/* G A L L E R Y - START */
 
 #gallery {
     height: 450vh;
@@ -37,13 +128,33 @@ body {
     border-radius: 3px;
 }
 
-.photo-container:hover {
-    transition: all 3s;
-}
-
 #photo-container1 {
     grid-row: 1 / 6;
     background-image: url(../img/01.jpg);
+}
+
+#photo-container1 #where {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(43, 116, 64);
+    opacity: 0; 
+}
+
+#photo-container1 #where:hover {
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+#photo-container1 #where h3, #where p {
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    transform: scale(2,2);
 }
 
 #photo-container2 {
@@ -99,3 +210,5 @@ body {
     align-items: center;
     margin-bottom: 3px;
 }
+
+/* G A L L E R Y - END */
