@@ -28,9 +28,9 @@ doc.ready(function () {
             photo3.css({ "opacity": "1" })
             photo4.css({ "opacity": "1" })
             photo5.css({ "opacity": "1" })
-        } else if (($(this).scrollTop() > 900) && ($(this).scrollTop() < 1300)) {
+        } else if (($(this).scrollTop() >= 900) && ($(this).scrollTop() < 1300)) {
             photo6.css({ "opacity": "1" })
-        } else if (($(this).scrollTop() > 1300) && ($(this).scrollTop() < 1700)) {
+        } else if (($(this).scrollTop() >= 1300) && ($(this).scrollTop() < 1700)) {
             photo7.css({ "opacity": "1" })
             photo8.css({ "opacity": "1" })
         } else if ($(this).scrollTop() > 1700) {
