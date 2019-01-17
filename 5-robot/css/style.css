@@ -1,0 +1,55 @@
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* C O R P U S - START */
+#corpus1 {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 200px solid rgb(137, 169, 230);
+    position: relative;
+}
+
+#corpus2 {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 120px solid rgb(130, 192, 233);
+    position: absolute;
+    top: 20px;
+    left: -80px;
+}
+
+.button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(212, 38, 105);
+    position: absolute;
+    top: -110px;
+}
+
+#button1 {
+    left: 20px;
+}
+
+#button2 {
+    left: -5px;
+}
+
+#button3 {
+    right: 20px;
+}
+
+/* C O R P U S - END */
+
+/* H E A D - START */
+
+
+/* H E A D - END */
