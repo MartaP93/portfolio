@@ -1,5 +1,5 @@
 #container {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,5 +51,116 @@
 
 /* H E A D - START */
 
+#head {
+    height: 60px;
+    width: 80px;
+    background-color: rgb(197, 218, 212);
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    border-radius: 5px;
+}
+
+.eye {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(51, 192, 98);
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+}
+
+#eye1 {
+    left: 20px;
+}
+
+#eye2 {
+    right: 20px;
+}
+
+#mouth {
+    height: 5px;
+    width: 30px;
+    background-color: rgb(243, 105, 158);
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+}
+
+.ear {
+    height: 20px;
+    width: 5px;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(192, 168, 141)
+}
+
+#ear1 {
+    left: -5px;
+}
+
+#ear2 {
+    right: -5px;
+}
+
+.antenna {
+    width: 5px;
+    height: 60px;
+    background-color: rgb(27, 134, 206);
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+}
+
+#antenna1 {
+    transform: rotate(-35deg);
+    left: 30px;
+}
+
+#antenna2 {
+    transform: rotate(35deg);
+    right: 30px;
+}
+
 
 /* H E A D - END */
+
+/* H A N D S - START */
+
+.hand {
+    height: 40px;
+    width: 30px;
+    background-color: rgb(145, 142, 140);
+    position: absolute;
+    top: 33px;
+}
+
+#hand1 {
+    transform: rotate(56deg);
+    left: -96.5px;
+}
+
+#hand2 {
+    transform: rotate(-56deg);
+    right: -96.5px;
+}
+
+.element1 {
+    position: absolute;
+    bottom: -20px;
+    left: 7.5px;
+    height: 20px;
+    width: 15px;
+    background-color: rgb(190, 147, 201);
+}
+
+.element2 {
+    position: absolute;
+    bottom: -30px;
+    left: 2.5px;
+    height: 10px;
+    width: 25px;
+    background-color: rgb(240, 160, 69);
+}
+
+/* H A N D S - END */
