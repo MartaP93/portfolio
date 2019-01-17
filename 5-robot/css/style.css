@@ -164,3 +164,54 @@
 }
 
 /* H A N D S - END */
+
+/* L E G S - START */
+
+.leg {
+    height: 80px;
+    width: 25px;
+    background-color: rgb(190, 147, 201);
+    position: absolute;
+    bottom: -280px;
+}
+
+#leg1 {
+    left: 7px;
+}
+
+#leg2 {
+    right: 7px;
+}
+
+.wheel {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(145, 136, 129);
+    position: absolute;
+    bottom: -27px;
+    left: -1.5px;
+    border: 1px solid rgb(0,0,0);
+}
+
+.element3, .element4, .element5 {
+    height: 24px;
+    width: 1px;
+    background-color: rgb(63, 60, 59);
+    position: absolute;
+    top: 0.5px;
+    left: 12px;
+}
+
+.element3 {
+    transform: rotate(60deg);
+}
+
+.element4 {
+    transform: rotate(120deg);
+
+}
+
+
+/* L E G S - END */
+
