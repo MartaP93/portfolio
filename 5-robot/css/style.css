@@ -105,21 +105,20 @@
 
 .antenna {
     width: 5px;
-    height: 60px;
+    height: 40px;
     background-color: rgb(27, 134, 206);
     position: absolute;
-    top: -40px;
-    z-index: -1;
+    top: -36px;
 }
 
 #antenna1 {
     transform: rotate(-35deg);
-    left: 30px;
+    left: 27px;
 }
 
 #antenna2 {
     transform: rotate(35deg);
-    right: 30px;
+    right: 27px;
 }
 
 
