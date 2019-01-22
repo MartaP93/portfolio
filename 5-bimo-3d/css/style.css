@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .front {
+    height: 300px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: rgb(81, 193, 180);
+    position: relative;
+    z-index: -1;
+    border-top-left-radius: 0;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .top {
+    height: 40px;
+    width: 225px;
+    background-color: rgb(99, 226, 211);
+    top: -38px;
+    left: -19px;
+    transform: skewX(45deg);
+    border-top-right-radius: 10px;
+  }
+  
+  .side {
+    height: 293px;
+    width: 40px;
+    background-color: rgb(67, 163, 152);
+    left: -39px;
+    top: -18px;
+    transform: skewY(45deg);
+    border-bottom-left-radius: 10px;
+  }
+
+  
