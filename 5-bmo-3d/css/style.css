@@ -1,0 +1,274 @@
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .front {
+    height: 300px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: rgb(81, 193, 180);
+    position: relative;
+    z-index: -1;
+    border-top-left-radius: 0;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .top {
+    height: 40px;
+    width: 225px;
+    background-color: rgb(99, 226, 211);
+    top: -38px;
+    left: -19px;
+    transform: skewX(45deg);
+    border-top-right-radius: 10px;
+  }
+  
+  .side {
+    height: 293px;
+    width: 40px;
+    background-color: rgb(67, 163, 152);
+    left: -39px;
+    top: -18px;
+    transform: skewY(45deg);
+    border-bottom-left-radius: 10px;
+  }
+
+  .face {
+    height: 110px;
+    width: 180px;
+    background-color: rgb(218, 251, 239);
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(119, 154, 146);
+  }
+  
+  .mouth {
+    height: 15px;
+    width: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    top: 55px;
+    left: 75px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .eye {
+    height: 15px;
+    width: 15px;
+    top: 35px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .eye1 {
+    left: 30px;
+  }
+  
+  .eye2 {
+    right: 37px;
+  }
+  
+  .cd-rom, .cd-button {
+    top: 153px;
+    height: 17px;
+    background-color: rgb(16, 68, 66);
+  }
+  
+  .cd-rom {
+    width: 90px;
+    border-radius: 5px;
+    left: 35px;
+  }
+  
+  .cd-button {
+    width: 17px;
+    border-radius: 50%;
+    right: 42px;
+  }
+  
+  .yellow-button {
+    background-color: rgb(199, 169, 50);
+    height: 50px;
+    width: 20px;
+    bottom: 50px;
+    left: 50px;
+  }
+  
+  .yellow2 {
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+  }
+  
+  .yellow-shadow {
+    background-color: rgb(254, 220, 80);
+    height: 100%;
+    width: 100%;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .yellow-shadow2 {
+    top: -4px;
+    right: 4px;
+  }
+  
+  .blue-button {
+    width: 0;
+      height: 0;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-bottom: 30px solid rgb(39, 205, 255);
+    bottom: 80px;
+    right: 65px;
+  }
+  
+  .blue-shadow {
+    border-bottom-color:  rgb(40, 154, 197);
+    top: -3px;
+    left: -19px;
+    z-index: -2;
+  }
+  
+  .green-button {
+    background-color: rgb(74, 228, 115);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 65px;
+    box-shadow: -4px -4px rgb(56, 158, 90);
+  }
+  
+  .red-button {
+    background-color: rgb(247, 110, 88);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -4px -4px rgb(193, 107, 87);
+    bottom: 28px;
+    right: 50px;
+  }
+  
+  .reset-button {
+    height: 6px;
+    width: 20px;
+    border-radius: 3px;
+    background-color:  rgb(16, 68, 66);
+    bottom: 20px;
+  }
+  
+  .reset1 {
+    left: 35px;
+  }
+  
+  .reset2 {
+    left: 85px;
+  }
+
+  .speaker {
+    background-color: rgb(16, 68, 66);
+    height: 7px;
+    width: 6px;
+    border-radius: 50%;
+  }
+  
+  .speaker1, .speaker2 {
+    top: 40px;
+  }
+  
+  .speaker3, .speaker4, .speaker5 {
+    top: 55px;
+  }
+  
+  .speaker6, .speaker7 {
+    top: 70px;
+  }
+  
+  .speaker1, .speaker6 {
+    left: 10px;
+  }
+  
+  .speaker2, .speaker7 {
+    right: 10px;
+  }
+  
+  .speaker3 {
+    left: 5px;
+  }
+  
+  .speaker5 {
+    right: 5px;
+  }
+  
+  .speaker4 {
+    left: 17px;
+  }
+  
+  .name {
+    transform: rotate(90deg);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: rgb(16, 68, 66);
+    top: 140px;
+    left: -40px;
+  }
+  
+  .hand, .leg {
+    background-color: rgb(57, 115, 115);
+    width: 18px;
+    height: 150px;
+    border-radius: 10px;
+    top: 170px;
+    left: -30px;
+  }
+  
+  .leg {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 70px;
+    left: 40px;
+    top: 300px;
+  }
+  
+  .hand2, .leg2 {
+    top: 300px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .hand2 {
+    height: 20px;
+    left: 200px;
+  }
+  
+  .leg2 {
+    left: 140px;
+  }
+  
+  .foot {
+    background-color: rgb(57, 115, 115);
+    width: 35px;
+    height: 18px;
+    border-radius: 9px;
+    bottom: 0;
+  }
+  
+  .ground {
+    height: 40px;
+    width: 240px;
+    border-radius: 100%;
+    background-color: rgb(225, 239, 236);
+    z-index: -3;
+    bottom: -85px;
+    left: -10px;
+  }
