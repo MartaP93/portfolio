@@ -272,3 +272,51 @@
     bottom: -85px;
     left: -10px;
   }
+  
+/* ANIMATION */
+.eye {
+  animation: eye 5s infinite;
+  /* animation-delay: 4s; */
+}
+
+@keyframes eye {
+  /* 0% {
+    height: 15px;
+  } */
+  5% {
+    height: 2px;
+    transform: translate(0,5px);
+  }
+  10%, 100% {
+    height: 15px;
+    transform: translate(0,-5px);
+  }
+}
+
+.green-button {
+  animation: click1 2s infinite;
+}
+
+.red-button {
+  animation: click2 2s infinite;
+}
+
+@keyframes click1 {
+  20% {
+    box-shadow: -4px -4px rgb(56, 158, 90);
+  }
+  60% {
+    box-shadow: -2px -2px transparent;
+    transform: translate(-2px,-2px);
+  }
+}
+
+@keyframes click2 {
+  20% {
+    box-shadow: -2px -2px transparent;
+    transform: translate(-2px,-2px);
+  }
+  40% {
+    box-shadow: -4px -4px rgb(193, 107, 87);
+  }
+}
