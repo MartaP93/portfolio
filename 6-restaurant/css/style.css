@@ -1,0 +1,120 @@
+body, html {
+  margin: 0;
+}
+
+nav#nav-bar {
+  height: 70px;
+  width: 100%;
+  background-color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav#nav-bar h1 {
+  padding: 0;
+  margin: 0;
+  color: #72a411;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav#nav-bar ul {
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  margin-right: 6%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+nav#nav-bar ul li {
+  list-style-type: none;
+}
+
+nav#nav-bar ul li a {
+  text-decoration: none;
+  color: gainsboro;
+  font-family: 'Krub', sans-serif;
+}
+
+section#main {
+  height: 105vh;
+  width: 100%;
+  background-image: url(../img/intro-bg.jpg);
+  background-size: 100%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section#main h1, section#main p {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+section#main h1 {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 9em;
+}
+
+section#main p {
+  font-size: 2.2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+}
+
+section#main a {
+  background-color: #72a411;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Krub', sans-serif;
+  font-size: 1em;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
