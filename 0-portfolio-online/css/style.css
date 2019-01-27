@@ -1,0 +1,220 @@
+body, html {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+section#welcome {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#459bd4), to(#8658c2));
+  background-image: linear-gradient(#459bd4, #8658c2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#welcome nav {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+section#welcome nav #nav-bar, section#welcome nav #language {
+  height: 100%;
+  width: 40%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#welcome nav #nav-bar ul, section#welcome nav #language ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 1.3vw;
+}
+
+section#welcome nav #nav-bar ul li a, section#welcome nav #language ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section#welcome nav #nav-bar ul li a:hover, section#welcome nav #language ul li a:hover {
+  color: #17199b;
+}
+
+section#welcome nav #language {
+  width: 10%;
+}
+
+section#welcome h1 {
+  width: 80%;
+  margin: 0;
+  font-size: 5.5vw;
+}
+
+section#about {
+  height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8658c2), to(#43b699));
+  background-image: linear-gradient(#8658c2, #43b699);
+}
+
+section#about #photo, section#about #text-about {
+  height: 60%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#about #photo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#about #photo img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+section#about #text-about {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#about #text-about p {
+  width: 70%;
+  font-size: 1.3vw;
+  text-align: justify;
+}
+
+section#skills {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#43b699), to(#c58e8e));
+  background-image: linear-gradient(#43b699, #c58e8e);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section#skills h3, section#skills #skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#skills h3 {
+  width: 100%;
+  height: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+section#skills #skills-container {
+  width: 60%;
+  height: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+section#skills #skills-container .skill {
+  height: 45%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+section#skills #skills-container .skill span, section#skills #skills-container .skill p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#skills #skills-container .skill span {
+  width: 100%;
+  height: 70%;
+}
+
+section#skills #skills-container .skill span i {
+  -webkit-transform: scale(3, 3);
+          transform: scale(3, 3);
+}
+
+section#skills #skills-container .skill p {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=style.css.map */
