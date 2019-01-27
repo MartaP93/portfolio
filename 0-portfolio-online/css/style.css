@@ -35,7 +35,6 @@ section#welcome nav {
 section#welcome nav #nav-bar, section#welcome nav #language {
   height: 100%;
   width: 40%;
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +60,7 @@ section#welcome nav #nav-bar ul, section#welcome nav #language ul {
 
 section#welcome nav #nav-bar ul li a, section#welcome nav #language ul li a {
   text-decoration: none;
+  text-shadow: 3px 3px 10px #524b4b;
   color: white;
 }
 

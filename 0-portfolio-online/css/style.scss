@@ -2,7 +2,8 @@ $colors: (
     pink-beige: rgb(197, 142, 142),
     green-sea: rgb(67, 182, 153),
     plummy: rgb(134, 88, 194),
-    blue-sky: rgb(69, 155, 212)
+    blue-sky: rgb(69, 155, 212),
+    grey1: rgb(82, 75, 75)
 );
 
 @function color($color-name) {
@@ -34,7 +35,6 @@ section#welcome {
         #nav-bar, #language {
             height: 100%;
             width: 40%;
-            background-color: transparent;
             display: flex;
             align-items: center;
 
@@ -50,6 +50,7 @@ section#welcome {
 
                 li a {
                     text-decoration: none;
+                    text-shadow: 3px 3px 10px color(grey1);
                     color: rgb(255,255,255);
                 }
 
