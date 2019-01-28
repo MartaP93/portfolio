@@ -65,7 +65,7 @@ nav#nav-bar ul li a {
 section#main {
   height: 105vh;
   width: 100%;
-  background-image: url(../img/intro-bg.jpg);
+  background-image: url(../img/intro-bg.png);
   background-size: 100%;
   opacity: 0.9;
   background-repeat: no-repeat;
@@ -188,5 +188,163 @@ section#about #container-about #text-about h3 {
 
 section#about #container-about #text-about p {
   font-size: 1.2em;
+}
+
+section#menu {
+  color: white;
+  height: 130vh;
+  background-image: url(../img/menu-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section#menu #menu-main {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#menu #menu-main h3, section#menu #menu-main p {
+  width: 100%;
+  text-align: center;
+}
+
+section#menu #menu-main #menu-main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#menu #menu-main #menu-main-text h3 {
+  width: 100%;
+  font-size: 3.5vw;
+  margin: 0;
+}
+
+section#menu #menu-main #menu-main-text .green-line {
+  background-color: #72a411;
+  width: 50px;
+  height: 2px;
+}
+
+section#menu #menu-main p {
+  font-size: 2vw;
+}
+
+section#menu #menu-card {
+  height: 70%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #262626;
+}
+
+section#menu #menu-card .menu-card-column {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container {
+  height: 90%;
+  width: 90%;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title h3 {
+  width: 100%;
+  font-size: 2.5vw;
+  margin: 0;
+  text-align: center;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title .green-line {
+  background-color: #72a411;
+  width: 50px;
+  height: 2px;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes {
+  height: 85%;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container {
+  height: 20%;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name {
+  height: 35%;
+  border-bottom: 2px dotted gainsboro;
+  font-size: 1.8vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name h5 {
+  margin: 0;
+  width: 30%;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-description {
+  height: 65%;
+  font-size: 1.3vw;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
