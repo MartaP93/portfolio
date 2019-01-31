@@ -427,10 +427,9 @@ section#gallery #gallery-photos #gallery-categories {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 section#gallery #gallery-photos #gallery-categories a {
@@ -457,7 +456,7 @@ section#gallery #gallery-photos #gallery-categories a:hover {
 }
 
 section#gallery #gallery-photos #gallery-container {
-  height: 90%;
+  height: 80%;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,7 +468,6 @@ section#gallery #gallery-photos #gallery-container {
       align-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 50px;
 }
 
 section#gallery #gallery-photos #gallery-container a {
@@ -510,5 +508,82 @@ section#gallery #gallery-photos #gallery-container a p:hover {
   opacity: 0.9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+section#contact {
+  height: 50vh;
+}
+
+section#contact #contact-phone {
+  height: 45%;
+  background-color: #72a411;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#contact #contact-phone h3 {
+  margin: 0;
+  font-size: 3.5vw;
+}
+
+section#contact #contact-address {
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #262626;
+  color: white;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section#contact #contact-address #address-section1, section#contact #contact-address #address-section2 {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#contact #contact-address #address-section1 p, section#contact #contact-address #address-section2 p {
+  margin: 0;
+  width: 40%;
+  height: 60%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section#contact #contact-address #address-section2 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section#contact #contact-address #address-section2 p {
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
