@@ -545,45 +545,53 @@ section#contact #contact-address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-section#contact #contact-address #address-section1, section#contact #contact-address #address-section2 {
-  width: 30%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section#contact #contact-address #address-section1 p, section#contact #contact-address #address-section2 p {
-  margin: 0;
-  width: 40%;
-  height: 60%;
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-section#contact #contact-address #address-section2 {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+section#contact #contact-address .address-section {
+  width: 30%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-section#contact #contact-address #address-section2 p {
-  text-align: left;
+section#contact #contact-address .address-section h3, section#contact #contact-address .address-section p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section#contact #contact-address .address-section h3 {
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  font-size: 2vw;
+  color: #72a411;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section#contact #contact-address .address-section p {
+  margin: 0;
+  height: 40%;
 }
 /*# sourceMappingURL=style.css.map */
