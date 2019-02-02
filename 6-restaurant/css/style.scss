@@ -14,47 +14,6 @@ body, html {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-nav#nav-bar {
-    height: 70px;
-    width: 100%;
-    background-color: color(dark-grey);
-    display: flex;
-    justify-content: space-between;
-
-    h1 {
-        padding: 0;
-        margin: 0;
-        color: color(lemon);
-        font-family: 'Dancing Script', cursive;
-        font-size: 2.5em;
-        height: 100%;
-        width: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    ul {
-        height: 100%;
-        width: 40%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0;
-        margin-right: 6%;
-        padding-inline-start: 0;
-
-        li {
-            list-style-type: none;
-            a {
-                text-decoration: none;
-                color: color(light-grey);
-                font-family: 'Krub', sans-serif;
-            }
-        }
-    }
-}
-
 section#main {
     height: 105vh;
     width: 100%;
@@ -66,6 +25,51 @@ section#main {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: relative;
+
+    nav#nav-bar {
+        height: 70px;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: color(lemon);
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            height: 100%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        ul {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0;
+            margin-right: 6%;
+            padding-inline-start: 0;
+    
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: color(light-grey);
+                    font-family: 'Krub', sans-serif;
+                }
+            }
+        }
+    }
 
     h1, p {
         width: 100%;
@@ -84,7 +88,7 @@ section#main {
         margin: 0;
     }
 
-    a {
+    a#discover {
         background-color: color(lemon);
         width: 200px;
         height: 50px;
@@ -364,6 +368,7 @@ section#gallery {
                 img {
                     height: 100%;
                     width: 100%;
+                    z-index: 1;
                 }
 
                 p {
@@ -448,4 +453,10 @@ section#contact {
             }
         }
     }
+}
+
+// ANIMATIONS 
+nav.bar-scroll {
+    background-color: color(dark-grey);
+    transition: 0.5s;
 }
