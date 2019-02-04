@@ -9,6 +9,14 @@ $colors: (
     @return map-get($colors, $color-name)
 }
 
+@mixin flex($justify, $alg-items, $alg-content, $wrap){ 
+    display: flex;
+    justify-content: $justify;
+    align-items: $alg-items;
+    align-content: $alg-content;
+    flex-wrap: $wrap;
+}
+
 body, html {
     margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -21,18 +29,13 @@ section#main {
     background-size: 100%;
     opacity: 0.9;
     background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    position: relative;
+    @include flex(center, center, center, wrap);
 
     nav#nav-bar {
         height: 70px;
         width: 100%;
         background-color: transparent;
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between, 0, 0, 0);
         position: fixed;
         top: 0;
         z-index: 10;
@@ -45,17 +48,13 @@ section#main {
             font-size: 2.5em;
             height: 100%;
             width: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(center, center, 0, 0);
         }
     
         ul {
             height: 100%;
             width: 40%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex(space-evenly, center, 0, 0);
             margin: 0;
             margin-right: 6%;
             padding-inline-start: 0;
@@ -66,6 +65,9 @@ section#main {
                     text-decoration: none;
                     color: color(light-grey);
                     font-family: 'Krub', sans-serif;
+                }
+                a:focus {
+                    color: color(lemon);
                 }
             }
         }
@@ -94,9 +96,7 @@ section#main {
         height: 50px;
         text-decoration: none;
         color: rgb(255,255,255);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center, 0, 0);
         font-family: 'Krub', sans-serif;
         font-size: 1em;
         margin-top: 50px;
@@ -106,22 +106,17 @@ section#main {
 section#about {
     height: 90vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center, 0, 0);
 
     #container-about {
         width: 100%;
         height: 70%;
-        display: flex;
-        justify-content: center;
+        @include flex(center, 0, 0, 0);
 
         #image, #text-about {
             height: 100%;
             width: 40%;
-            display: flex;
-            justify-items: center;
-            align-items: center;
+            @include flex(0, center, 0, 0);
         }
 
         #image img {
@@ -129,10 +124,7 @@ section#about {
         }
 
         #text-about {
-            display: flex;
-            justify-content: flex-start;
-            align-content: space-evenly;
-            flex-wrap: wrap;
+            @include flex(flex-start, 0, space-evenly, wrap);
             color: color(dark-grey);
             height: 100%;
 
@@ -151,9 +143,7 @@ section#about {
             p {
                 font-size: 1.2em;
             }
-
         }
-    
     }
 }
 
@@ -166,10 +156,7 @@ section#menu {
 
     #menu-main {
         height: 30%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
+        @include flex(center, 0, center, wrap);
 
         h3, p {
             width: 100%;
@@ -177,10 +164,7 @@ section#menu {
         }
 
         #menu-main-text {
-            display: flex;
-            justify-content: center;
-            align-items: space-evenly;
-            flex-wrap: wrap;
+            @include flex(center, space-evenly, 0, wrap);
 
             h3 {
                 width: 100%;
@@ -203,17 +187,14 @@ section#menu {
     #menu-card {
         height: 70%;
         background-color:rgb(255,255,255);
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        @include flex(space-evenly, 0, 0, wrap);
+
         color: color(dark-grey);
 
         .menu-card-column {
             width: 40%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(center, center, 0, 0);
 
             .menu-card-container {
                 height: 90%;
@@ -221,10 +202,7 @@ section#menu {
 
                 .menu-card-title {
                     height: 15%;
-                    display: flex;
-                    justify-content: center;
-                    align-content: space-evenly;
-                    flex-wrap: wrap;
+                    @include flex(center, 0, space-evenly, wrap);
 
                     h3 {
                         width: 100%;
@@ -250,8 +228,7 @@ section#menu {
                             border-bottom: 2px dotted color(light-grey);
                             font-size: 1.8vw;
                             font-weight: bold;
-                            display: flex;
-                            justify-content: space-between;
+                            @include flex(space-between, 0, 0, 0);
 
                             h5 {
                                 margin: 0;
@@ -259,8 +236,7 @@ section#menu {
                             }
 
                             .price {
-                                display: flex;
-                                justify-content: flex-end;
+                                @include flex(flex-end, 0, 0, 0);
                             }
                         }
 
@@ -286,10 +262,7 @@ section#gallery {
 
     #gallery-main {
         height: 23%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
+        @include flex(center, 0, center, wrap);
 
         h3, p {
             width: 100%;
@@ -297,10 +270,7 @@ section#gallery {
         }
 
         #gallery-main-text {
-            display: flex;
-            justify-content: center;
-            align-items: space-evenly;
-            flex-wrap: wrap;
+            @include flex(center, space-evenly, 0, wrap);
 
             h3 {
                 width: 100%;
@@ -323,16 +293,12 @@ section#gallery {
     #gallery-photos {
         background-color:rgb(255,255,255);
         height: 77%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include flex(center, 0, 0, wrap);
 
         #gallery-categories {
             height: 10%;
             width: 60%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: flex-end;
+            @include flex(space-evenly, flex-end, 0, 0);
 
             a {
                 width: 20%;
@@ -341,9 +307,7 @@ section#gallery {
                 text-decoration: none;
                 color: color(middle-grey);
                 background-color: color(light-grey);
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(center, center, 0, 0);
             }
 
             a:hover {
@@ -355,10 +319,7 @@ section#gallery {
         #gallery-container {
             height: 80%;
             width: 80%;
-            display: flex;
-            justify-content: space-evenly;
-            align-content: space-evenly;
-            flex-wrap: wrap;
+            @include flex(space-evenly, 0, space-evenly, wrap);
 
             a {
                 height: 20%;
@@ -383,9 +344,7 @@ section#gallery {
                     font-weight: bold;
                     color: rgb(255,255,255);
                     background-color: color(dark-grey);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(center, center, 0, 0);
                 }
 
                 p:hover {
@@ -404,9 +363,7 @@ section#contact {
         height: 45%;
         background-color: color(lemon);
         color: rgb(255,255,255);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center, 0, 0);
 
         h3 {
             margin: 0;
@@ -419,22 +376,15 @@ section#contact {
         display: flex;
         background-color: color(dark-grey);
         color: white;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex(center, flex-start, 0, 0);
 
         .address-section {
             width: 30%;
             height: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            @include flex(center, center, 0, wrap);
 
             h3, p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(center, center, 0, 0);
                 text-align: center;
             }
 
@@ -456,7 +406,11 @@ section#contact {
 }
 
 // ANIMATIONS 
-nav.bar-scroll {
+nav .bar-scroll {
     background-color: color(dark-grey);
     transition: 0.5s;
+}
+
+nav .active-link {
+    color: color(lemon);
 }
