@@ -3,7 +3,7 @@ body, html {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-section#main {
+#main {
   height: 105vh;
   width: 100%;
   background-image: url(../img/intro-bg.png);
@@ -25,7 +25,7 @@ section#main {
       flex-wrap: wrap;
 }
 
-section#main nav#nav-bar {
+#main .nav-bar {
   height: 70px;
   width: 100%;
   background-color: transparent;
@@ -47,7 +47,7 @@ section#main nav#nav-bar {
   z-index: 10;
 }
 
-section#main nav#nav-bar h1 {
+#main .nav-bar h1 {
   padding: 0;
   margin: 0;
   color: #72a411;
@@ -70,7 +70,7 @@ section#main nav#nav-bar h1 {
       flex-wrap: 0;
 }
 
-section#main nav#nav-bar ul {
+#main .nav-bar ul {
   height: 100%;
   width: 40%;
   display: -webkit-box;
@@ -90,40 +90,41 @@ section#main nav#nav-bar ul {
   margin-right: 6%;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  text-transform: uppercase;
 }
 
-section#main nav#nav-bar ul li {
+#main .nav-bar ul li {
   list-style-type: none;
 }
 
-section#main nav#nav-bar ul li a {
+#main .nav-bar ul li a {
   text-decoration: none;
   color: gainsboro;
   font-family: 'Krub', sans-serif;
 }
 
-section#main nav#nav-bar ul li a:focus {
+#main .nav-bar ul li a:hover {
   color: #72a411;
 }
 
-section#main h1, section#main p {
+#main h1, #main p {
   width: 100%;
   text-align: center;
   color: white;
 }
 
-section#main h1 {
+#main h1 {
   margin: 0;
   font-family: 'Dancing Script', cursive;
   font-size: 9em;
 }
 
-section#main p {
+#main p {
   font-size: 2.2em;
   margin: 0;
 }
 
-section#main a#discover {
+#main .discover {
   background-color: #72a411;
   width: 200px;
   height: 50px;
@@ -145,9 +146,10 @@ section#main a#discover {
   font-family: 'Krub', sans-serif;
   font-size: 1em;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
-section#about {
+#about {
   height: 90vh;
   width: 100%;
   display: -webkit-box;
@@ -165,7 +167,7 @@ section#about {
       flex-wrap: 0;
 }
 
-section#about #container-about {
+#about .container-about {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -183,7 +185,7 @@ section#about #container-about {
       flex-wrap: 0;
 }
 
-section#about #container-about #image, section#about #container-about #text-about {
+#about .container-about .image, #about .container-about .text-about {
   height: 100%;
   width: 40%;
   display: -webkit-box;
@@ -201,11 +203,11 @@ section#about #container-about #image, section#about #container-about #text-abou
       flex-wrap: 0;
 }
 
-section#about #container-about #image img {
+#about .container-about img {
   width: 85%;
 }
 
-section#about #container-about #text-about {
+#about .container-about .text-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,23 +225,24 @@ section#about #container-about #text-about {
   height: 100%;
 }
 
-section#about #container-about #text-about h3, section#about #container-about #text-about p, section#about #container-about #text-about h2 {
+#about .container-about .text-about h3, #about .container-about .text-about p, #about .container-about .text-about h2 {
   margin: 0;
 }
 
-section#about #container-about #text-about h2 {
+#about .container-about .text-about h2 {
   font-size: 2.2em;
+  text-transform: uppercase;
 }
 
-section#about #container-about #text-about h3 {
+#about .container-about .text-about h3 {
   font-size: 1.8em;
 }
 
-section#about #container-about #text-about p {
+#about .container-about .text-about p {
   font-size: 1.2em;
 }
 
-section#menu {
+#menu {
   color: white;
   height: 130vh;
   background-image: url(../img/menu-bg.jpg);
@@ -247,7 +250,7 @@ section#menu {
   background-attachment: fixed;
 }
 
-section#menu #menu-main {
+#menu .menu-main {
   height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,12 +267,12 @@ section#menu #menu-main {
       flex-wrap: wrap;
 }
 
-section#menu #menu-main h3, section#menu #menu-main p {
+#menu .menu-main h3, #menu .menu-main p {
   width: 100%;
   text-align: center;
 }
 
-section#menu #menu-main #menu-main-text {
+#menu .menu-main .menu-main-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,23 +288,25 @@ section#menu #menu-main #menu-main-text {
       flex-wrap: wrap;
 }
 
-section#menu #menu-main #menu-main-text h3 {
+#menu .menu-main .menu-main-text h3 {
   width: 100%;
   font-size: 3.5vw;
   margin: 0;
+  text-transform: uppercase;
 }
 
-section#menu #menu-main #menu-main-text .green-line {
+#menu .menu-main .menu-main-text hr {
   background-color: #72a411;
   width: 50px;
   height: 2px;
+  border: none;
 }
 
-section#menu #menu-main p {
+#menu .menu-main p {
   font-size: 2vw;
 }
 
-section#menu #menu-card {
+#menu .menu-card {
   height: 70%;
   background-color: white;
   display: -webkit-box;
@@ -320,7 +325,7 @@ section#menu #menu-card {
   color: #262626;
 }
 
-section#menu #menu-card .menu-card-column {
+#menu .menu-card .menu-card-column {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -338,12 +343,12 @@ section#menu #menu-card .menu-card-column {
       flex-wrap: 0;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container {
+#menu .menu-card .menu-card-column .menu-card-container {
   height: 90%;
   width: 90%;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-title {
   height: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,28 +365,30 @@ section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title 
       flex-wrap: wrap;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title h3 {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-title h3 {
   width: 100%;
   font-size: 2.5vw;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-title .green-line {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-title hr {
   background-color: #72a411;
   width: 50px;
   height: 2px;
+  border: none;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes {
   height: 85%;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container {
   height: 20%;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name {
   height: 35%;
   border-bottom: 2px dotted gainsboro;
   font-size: 1.8vw;
@@ -401,12 +408,12 @@ section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes
       flex-wrap: 0;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name h5 {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name h4 {
   margin: 0;
   width: 30%;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name .price {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-name .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,21 +429,21 @@ section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes
       flex-wrap: 0;
 }
 
-section#menu #menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-description {
+#menu .menu-card .menu-card-column .menu-card-container .menu-card-dishes .dish-container .dish-description {
   height: 65%;
   font-size: 1.3vw;
   font-style: italic;
 }
 
-section#gallery {
-  color: white;
+#gallery {
   height: 200vh;
   background-image: url(../img/gallery-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 }
 
-section#gallery #gallery-main {
+#gallery .gallery-main {
   height: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,12 +460,12 @@ section#gallery #gallery-main {
       flex-wrap: wrap;
 }
 
-section#gallery #gallery-main h3, section#gallery #gallery-main p {
+#gallery .gallery-main h3, #gallery .gallery-main p {
   width: 100%;
   text-align: center;
 }
 
-section#gallery #gallery-main #gallery-main-text {
+#gallery .gallery-main .gallery-main-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,23 +481,25 @@ section#gallery #gallery-main #gallery-main-text {
       flex-wrap: wrap;
 }
 
-section#gallery #gallery-main #gallery-main-text h3 {
+#gallery .gallery-main .gallery-main-text h3 {
   width: 100%;
   font-size: 3.5vw;
   margin: 0;
+  text-transform: uppercase;
 }
 
-section#gallery #gallery-main #gallery-main-text .green-line {
+#gallery .gallery-main .gallery-main-text hr {
   background-color: #72a411;
   width: 50px;
   height: 2px;
+  border: none;
 }
 
-section#gallery #gallery-main p {
+#gallery .gallery-main p {
   font-size: 2vw;
 }
 
-section#gallery #gallery-photos {
+#gallery .gallery-photos {
   background-color: white;
   height: 77%;
   display: -webkit-box;
@@ -508,7 +517,7 @@ section#gallery #gallery-photos {
       flex-wrap: wrap;
 }
 
-section#gallery #gallery-photos #gallery-categories {
+#gallery .gallery-photos .gallery-categories {
   height: 10%;
   width: 60%;
   display: -webkit-box;
@@ -526,7 +535,7 @@ section#gallery #gallery-photos #gallery-categories {
       flex-wrap: 0;
 }
 
-section#gallery #gallery-photos #gallery-categories a {
+#gallery .gallery-photos .gallery-categories a {
   width: 20%;
   height: 40%;
   font-size: 1.6vw;
@@ -546,14 +555,15 @@ section#gallery #gallery-photos #gallery-categories a {
       align-content: 0;
   -ms-flex-wrap: 0;
       flex-wrap: 0;
+  text-transform: uppercase;
 }
 
-section#gallery #gallery-photos #gallery-categories a:hover {
+#gallery .gallery-photos .gallery-categories a:hover {
   background-color: #72a411;
   color: white;
 }
 
-section#gallery #gallery-photos #gallery-container {
+#gallery .gallery-photos .gallery-container {
   height: 80%;
   width: 80%;
   display: -webkit-box;
@@ -571,19 +581,19 @@ section#gallery #gallery-photos #gallery-container {
       flex-wrap: wrap;
 }
 
-section#gallery #gallery-photos #gallery-container a {
+#gallery .gallery-photos .gallery-container a {
   height: 20%;
   width: 30%;
   position: relative;
 }
 
-section#gallery #gallery-photos #gallery-container a img {
+#gallery .gallery-photos .gallery-container a img {
   height: 100%;
   width: 100%;
   z-index: 1;
 }
 
-section#gallery #gallery-photos #gallery-container a p {
+#gallery .gallery-photos .gallery-container a p {
   margin: 0;
   position: absolute;
   top: 0;
@@ -610,17 +620,17 @@ section#gallery #gallery-photos #gallery-container a p {
       flex-wrap: 0;
 }
 
-section#gallery #gallery-photos #gallery-container a p:hover {
+#gallery .gallery-photos .gallery-container a p:hover {
   opacity: 0.9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-section#contact {
+#contact {
   height: 50vh;
 }
 
-section#contact #contact-phone {
+#contact .contact-phone {
   height: 45%;
   background-color: #72a411;
   color: white;
@@ -639,12 +649,13 @@ section#contact #contact-phone {
       flex-wrap: 0;
 }
 
-section#contact #contact-phone h3 {
+#contact .contact-phone h3 {
   margin: 0;
   font-size: 3.5vw;
+  text-transform: uppercase;
 }
 
-section#contact #contact-address {
+#contact .contact-address {
   height: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,7 +675,7 @@ section#contact #contact-address {
       flex-wrap: 0;
 }
 
-section#contact #contact-address .address-section {
+#contact .contact-address .address-section {
   width: 30%;
   height: 80%;
   display: -webkit-box;
@@ -682,7 +693,7 @@ section#contact #contact-address .address-section {
       flex-wrap: wrap;
 }
 
-section#contact #contact-address .address-section h3, section#contact #contact-address .address-section p {
+#contact .contact-address .address-section h3, #contact .contact-address .address-section p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +710,7 @@ section#contact #contact-address .address-section h3, section#contact #contact-a
   text-align: center;
 }
 
-section#contact #contact-address .address-section h3 {
+#contact .contact-address .address-section h3 {
   width: 100%;
   height: 60%;
   margin: 0;
@@ -708,20 +719,21 @@ section#contact #contact-address .address-section h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-transform: uppercase;
 }
 
-section#contact #contact-address .address-section p {
+#contact .contact-address .address-section p {
   margin: 0;
   height: 40%;
 }
 
-nav .bar-scroll {
+.nav-bar-scroll {
   background-color: #262626;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-nav .active-link {
+.active-link {
   color: #72a411;
 }
 /*# sourceMappingURL=style.css.map */

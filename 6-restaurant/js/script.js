@@ -1,22 +1,26 @@
 'use strict';
 
-var win = $(window);
-var doc = $(document);
-var nav = $('#nav-bar');
+var nav = $('.nav-bar');
 
-doc.ready(function () {
-    win.scroll(function () {
+$(document).ready(function () {
+    $(window).scroll(function () {
         // console.log(win.scrollTop());
-        if (win.scrollTop()) {
+        if ($(window).scrollTop()) {
             // nav.css({ 'background-color': 'rgb(38,38,38)' })
-            nav.addClass("bar-scroll");
+            nav.addClass("nav-bar-scroll");
         } else {
-            nav.removeClass("bar-scroll");
+            nav.removeClass("nav-bar-scroll");
         }
-    })
+    });
+
+    nav.localScroll();
 })
 
 
+
+
+
+// NIE DZIAŁA
 var links = $(".link");
 
 // links.each(function () {
