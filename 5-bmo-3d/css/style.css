@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(200, 230, 221, 0.747);
+}
+
 .container {
     display: flex;
     height: 90vh;
@@ -267,7 +271,7 @@
     height: 40px;
     width: 240px;
     border-radius: 100%;
-    background-color: rgb(225, 239, 236);
+    background-color: rgba(168, 168, 168, 0.4);
     z-index: -3;
     bottom: -85px;
     left: -10px;

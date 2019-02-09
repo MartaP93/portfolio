@@ -94,10 +94,10 @@ body, html {
 
 .portfolio {
     @include size(140vh, 100%);
-    @include flex(center, 0, space-evenly, wrap);
+    @include flex(center, 0, center, wrap);
 
     .title-container {
-        @include size(15%, 75%);
+        @include size(8%, 75%);
         @include flex(center, flex-end, 0, 0);
 
         h2 {
@@ -115,20 +115,23 @@ body, html {
         a {
             @include size(40%, 45%);
             position: relative;
+            border-radius: 5%;
 
             img {
                 @include size(100%, 100%);
+                border-radius: 5%;
             }
 
             .project {
                 @include size(100%, 100%);
-                @include flex(center, 0, space-evenly, wrap);
+                @include flex(center, 0, center, wrap);
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: color(plummy);
+                background-color: color(grey1);
                 opacity: 0;
                 color: color(white1);
+                border-radius: 5%;
 
                 h3 {
                     @include size(30%, 90%);
@@ -139,19 +142,28 @@ body, html {
                 }
 
                 p {
-                    @include size(50%, 90%);
+                    @include size(30%, 75%);
                     @include flex(center, center, 0, 0);
                     font-size: 1vw;
-                    text-align: justify;
+                    text-align: center;
                     margin: 0;
                 }
             }
 
             .project:hover {
-                opacity: 0.9;
+                opacity: 0.85;
                 transition: 0.5s;
             }
         }
     }
+}
 
+.footer {
+    @include size(15vh,100%);
+    background-color: color(grey1);
+    @include flex(center, center, 0, 0);
+
+    p {
+        font-size: 1vw;
+    }
 }
