@@ -1,8 +1,5 @@
 $colors: (
-    pink-beige: rgb(197, 142, 142),
-    green-sea: rgb(44, 131, 109),
-    plummy: rgb(91, 56, 138),
-    blue-sky: rgb(76, 162, 219),
+    green-sea: rgb(51, 150, 125),
     grey1: rgb(82, 75, 75),
     white1: rgb(255,255,255)
 );
@@ -24,6 +21,28 @@ $colors: (
     width: $width;
 }
 
+@mixin desktop($desktop) {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin responsive-font($size840, $size650, $size480) {
+    @media (max-width: 840px) {
+        font-size: $size840;
+    }
+
+    @media (max-width: 650px) {
+        font-size: $size650;
+    }
+
+    @media (max-width: 480px) {
+        font-size: $size480;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 body, html {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -31,17 +50,44 @@ body, html {
 }
 
 .header {
-    @include size(13vh, 89%);
+    @include size(11vh, 90%);
     @include flex(flex-end, 0, 0, 0);
+    background-color: color(white1);
+    position: fixed;
+    z-index: 2;
 
     .icons-container {
         @include size(100%, 13%);
         @include flex(space-between, center, 0, 0);
 
+        @include desktop(840px) {
+            @include size(100%, 15%);
+        }
+
+        @include desktop(650px) {
+            @include size(100%, 20%);
+        }
+
+        @include desktop(480px) {
+            @include size(100%, 25%);
+        }
+
         a {
             i {
                 color: color(grey1);
                 transform: scale(1.5,1.5);
+
+                @include desktop(840px) {
+                    transform: scale(1.3,1.3);
+                }
+
+                @include desktop(650px) {
+                    transform: scale(1.1,1.1);
+                }
+
+                @include desktop(480px) {
+                    transform: scale(1.0,1.0);
+                }
             }
         }
 
@@ -55,18 +101,29 @@ body, html {
 }
 
 .about {
-    @include size(60vh, 100%);
-    @include flex(center, 0, 0, wrap);
+    @include size(80vh, 100%);
+    @include flex(center, 0, center, wrap);
     color: color(grey1);
     position: relative;
+
+    @include desktop(480px) {
+        @include size(70vh, 100%);
+    }
 
     .text-about-1 {
         @include size(98%, 40%);
         @include flex(flex-start, center, 0, 0);
 
+        @include desktop(650px) {
+            @include size(40%, 80%);
+            @include flex(flex-start, flex-end, 0, 0);
+        }
+
         h1 {
             font-size: 3.2vw;
             margin: 0;
+
+            @include responsive-font(3.8vw, 4.5vw, 6vw);
         }
     }
 
@@ -74,10 +131,19 @@ body, html {
         @include size(98%, 40%);
         @include flex(flex-start, center, 0, 0);
 
+        @include desktop(650px) {
+            @include size(35%, 80%);
+        }
+
         p {
-            font-size: 1vw;
+            font-size: 1.1vw;
             text-align: justify;
             margin: 0;
+
+            @include responsive-font(1.5vw, 2vw, 2.5vw);
+            @include desktop(650px) {
+                line-height: 1.3;
+            }
         }
     }
 
@@ -96,15 +162,29 @@ body, html {
     @include size(140vh, 100%);
     @include flex(center, 0, center, wrap);
 
+    @include desktop(650px) {
+        @include size(200vh, 100%);
+    }
+
+    @include desktop(480px) {
+        @include size(180vh, 100%);
+    }
+
     .title-container {
         @include size(8%, 75%);
         @include flex(center, flex-end, 0, 0);
+
+        @include desktop(650px) {
+            @include size(5%, 75%);
+        }
 
         h2 {
             margin: 0;
             font-size: 2vw;
             text-transform: uppercase;
             color: color(grey1);
+
+            @include responsive-font(2.5vw, 3vw, 3.5vw);
         }
     }
 
@@ -112,14 +192,22 @@ body, html {
         @include size(80%, 80%);
         @include flex(space-evenly, 0, space-evenly, wrap);
 
+        @include desktop(650px) {
+            @include size(90%, 80%);
+        }
+
         a {
-            @include size(40%, 45%);
+            @include size(40%, 40%);
             position: relative;
-            border-radius: 5%;
+            border-radius: 3%;
+
+            @include desktop(650px) {
+                @include size(20%, 80%);
+            }
 
             img {
                 @include size(100%, 100%);
-                border-radius: 5%;
+                border-radius: 3%;
             }
 
             .project {
@@ -131,7 +219,7 @@ body, html {
                 background-color: color(grey1);
                 opacity: 0;
                 color: color(white1);
-                border-radius: 5%;
+                border-radius: 3%;
 
                 h3 {
                     @include size(30%, 90%);
@@ -139,6 +227,8 @@ body, html {
                     font-size: 1.2vw;
                     text-transform: uppercase;
                     margin: 0;
+
+                    @include responsive-font(1.5vw, 2vw, 2.5vw);
                 }
 
                 p {
@@ -147,6 +237,8 @@ body, html {
                     font-size: 1vw;
                     text-align: center;
                     margin: 0;
+
+                    @include responsive-font(1.2vw, 1.5vw, 2vw);
                 }
             }
 
@@ -165,5 +257,6 @@ body, html {
 
     p {
         font-size: 1vw;
+        @include responsive-font(1.5vw, 2vw, 2.5vw);
     }
 }
