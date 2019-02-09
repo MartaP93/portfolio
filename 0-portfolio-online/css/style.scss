@@ -1,7 +1,7 @@
 $colors: (
     pink-beige: rgb(197, 142, 142),
-    green-sea: rgb(67, 182, 153),
-    plummy: rgb(134, 88, 194),
+    green-sea: rgb(44, 131, 109),
+    plummy: rgb(91, 56, 138),
     blue-sky: rgb(69, 155, 212),
     grey1: rgb(82, 75, 75)
 );
@@ -10,6 +10,18 @@ $colors: (
     @return map-get($colors, $color-name)
 }
 
+@mixin flex($justify, $alg-items, $alg-content, $wrap){ 
+    display: flex;
+    justify-content: $justify;
+    align-items: $alg-items;
+    align-content: $alg-content;
+    flex-wrap: $wrap;
+}
+
+@mixin size($height, $width){
+    height: $height;
+    width: $width;
+}
 
 body, html {
     margin: 0;
@@ -17,154 +29,71 @@ body, html {
     color: rgb(255,255,255);
 }
 
-section#welcome {
-    height: 100vh;
-    background-image: linear-gradient(color(blue-sky), color(plummy));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+    @include size(13vh, 100%);
+    @include flex(flex-end, 0, 0, 0);
 
-    nav {
-        height: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
+    .icons-container {
+        @include size(100%, 20%);
+        @include flex(space-evenly, center, 0, 0);
+        margin-right: 20px;
 
-        #nav-bar, #language {
-            height: 100%;
-            width: 40%;
-            display: flex;
-            align-items: center;
-
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-                justify-items: center;
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                font-size: 1.3vw;
-
-                li a {
-                    text-decoration: none;
-                    text-shadow: 3px 3px 10px color(grey1);
-                    color: rgb(255,255,255);
-                }
-
-                li a:hover {
-                    color: rgb(23, 25, 155);
-                }
+        a {
+            i {
+                color: color(grey1);
+                transform: scale(1.5,1.5);
             }
         }
 
-        #language {
-            width: 10%;
-        }
-
-    }
-    
-    h1 {
-        width: 80%;
-        margin: 0;
-        font-size: 5.5vw;
+        a:hover {
+            transform: scale(1.1,1.1);
+            i {
+                color: color(green-sea);
+            }
+        } 
     }
 }
 
-section#about {
-    height: 110vh;
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(color(plummy), color(green-sea));
+.about {
+    @include size(60vh, 100%);
+    @include flex(center, 0, 0, wrap);
+    color: color(grey1);
+    position: relative;
 
-    #photo, #text-about {
-        height: 60%;
-        width: 50%;
-        display: flex;
-    }
+    .text-about-1 {
+        @include size(98%, 40%);
+        @include flex(flex-start, center, 0, 0);
 
-    #photo {
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50%;
-            border-radius: 50%;
+        h1 {
+            font-size: 3.2vw;
+            margin: 0;
         }
     }
 
-    #text-about {
-        justify-content: flex-start;
-        align-content: space-evenly;
-        flex-wrap: wrap;
-        
+    .text-about-2 {
+        @include size(98%, 40%);
+        @include flex(flex-start, center, 0, 0);
+
         p {
-            width: 70%;
-            font-size: 1.3vw;
+            font-size: 1vw;
             text-align: justify;
+            margin: 0;
         }
+    }
+
+    hr {
+        @include size(1px, 80%);
+        background-color: color(grey1);
+        position: absolute;
+        left: 10%;
+        bottom: 0;        
+        margin: 0;
+        border: none;
     }
 }
 
-section#skills {
-    height: 100vh;
-    background-image: linear-gradient(color(green-sea), color(pink-beige));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.portfolio {
+    @include size(100vh, 100%);
 
-    h3, #skills-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    h3 {
-        width: 100%;
-        height: 20%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 2.5vw;
-        margin: 0;
-    }
-
-
-    #skills-container {
-        width: 60%;
-        height: 60%;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-
-        .skill {
-            height: 45%;
-            width: 30%;
-            display: flex;
-            flex-wrap: wrap;
-            border-radius: 10px;
-
-            span, p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            span {
-                width: 100%;
-                height: 70%;
-                i {
-                    transform: scale(3,3);
-                }
-            }
-
-            p {
-                width: 100%;
-                height: 30%;
-                margin: 0;
-                align-items: flex-start;
-            }
-        }
-    }
+    
 }
