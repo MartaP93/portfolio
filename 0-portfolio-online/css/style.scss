@@ -2,8 +2,9 @@ $colors: (
     pink-beige: rgb(197, 142, 142),
     green-sea: rgb(44, 131, 109),
     plummy: rgb(91, 56, 138),
-    blue-sky: rgb(69, 155, 212),
-    grey1: rgb(82, 75, 75)
+    blue-sky: rgb(76, 162, 219),
+    grey1: rgb(82, 75, 75),
+    white1: rgb(255,255,255)
 );
 
 @function color($color-name) {
@@ -30,13 +31,12 @@ body, html {
 }
 
 .header {
-    @include size(13vh, 100%);
+    @include size(13vh, 89%);
     @include flex(flex-end, 0, 0, 0);
 
     .icons-container {
-        @include size(100%, 20%);
-        @include flex(space-evenly, center, 0, 0);
-        margin-right: 20px;
+        @include size(100%, 13%);
+        @include flex(space-between, center, 0, 0);
 
         a {
             i {
@@ -93,7 +93,65 @@ body, html {
 }
 
 .portfolio {
-    @include size(100vh, 100%);
+    @include size(140vh, 100%);
+    @include flex(center, 0, space-evenly, wrap);
 
-    
+    .title-container {
+        @include size(15%, 75%);
+        @include flex(center, flex-end, 0, 0);
+
+        h2 {
+            margin: 0;
+            font-size: 2vw;
+            text-transform: uppercase;
+            color: color(grey1);
+        }
+    }
+
+    .projects-container {
+        @include size(80%, 80%);
+        @include flex(space-evenly, 0, space-evenly, wrap);
+
+        a {
+            @include size(40%, 45%);
+            position: relative;
+
+            img {
+                @include size(100%, 100%);
+            }
+
+            .project {
+                @include size(100%, 100%);
+                @include flex(center, 0, space-evenly, wrap);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: color(plummy);
+                opacity: 0;
+                color: color(white1);
+
+                h3 {
+                    @include size(30%, 90%);
+                    @include flex(center, center, 0, 0);
+                    font-size: 1.2vw;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+
+                p {
+                    @include size(50%, 90%);
+                    @include flex(center, center, 0, 0);
+                    font-size: 1vw;
+                    text-align: justify;
+                    margin: 0;
+                }
+            }
+
+            .project:hover {
+                opacity: 0.9;
+                transition: 0.5s;
+            }
+        }
+    }
+
 }
