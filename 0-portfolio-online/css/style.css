@@ -366,6 +366,8 @@ body, html {
   width: 40%;
   position: relative;
   border-radius: 3%;
+  -webkit-box-shadow: 9px 10px 34px 5px rgba(107, 101, 107, 0.79);
+  box-shadow: 9px 10px 34px 5px rgba(107, 101, 107, 0.79);
 }
 
 @media (max-width: 650px) {

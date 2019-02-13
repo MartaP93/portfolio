@@ -18,25 +18,30 @@ $colors: (
     flex-wrap: $wrap;
 }
 
+@mixin size($height, $width){
+    height: $height;
+    width: $width;
+}
+
+//  - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - -- - --
+
 body, html {
     margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #main {
-    height: 105vh;
-    width: 100%;
+    @include size(105vh, 100%);
+    @include flex(center, center, center, wrap);
     background-image: url(../img/intro-bg.png);
     background-size: 100%;
     opacity: 0.9;
     background-repeat: no-repeat;
-    @include flex(center, center, center, wrap);
 
     .nav-bar {
-        height: 70px;
-        width: 100%;
-        background-color: transparent;
+        @include size(70px, 100%);
         @include flex(space-between, 0, 0, 0);
+        background-color: transparent;
         position: fixed;
         top: 0;
         z-index: 10;
@@ -44,17 +49,15 @@ body, html {
         h1 {
             padding: 0;
             margin: 0;
+            @include size(100%, 20%);
+            @include flex(center, center, 0, 0);           
             color: color(lemon);
             font-family: 'Dancing Script', cursive;
             font-size: 2.5em;
-            height: 100%;
-            width: 20%;
-            @include flex(center, center, 0, 0);
         }
     
         ul {
-            height: 100%;
-            width: 40%;
+            @include size(100%, 40%);
             @include flex(space-evenly, center, 0, 0);
             margin: 0;
             margin-right: 6%;
@@ -94,11 +97,10 @@ body, html {
 
     .discover {
         background-color: color(lemon);
-        width: 200px;
-        height: 50px;
+        @include size(50px, 200px);
+        @include flex(center, center, 0, 0);
         text-decoration: none;
         color: color(white1);
-        @include flex(center, center, 0, 0);
         font-family: 'Krub', sans-serif;
         font-size: 1em;
         margin-top: 50px;
@@ -107,18 +109,15 @@ body, html {
 }
 
 #about {
-    height: 90vh;
-    width: 100%;
+    @include size(90vh, 100%);
     @include flex(center, center, 0, 0);
 
     .container-about {
-        width: 100%;
-        height: 70%;
+        @include size(70%, 100%);
         @include flex(center, 0, 0, 0);
 
         .image, .text-about {
-            height: 100%;
-            width: 40%;
+            @include size(100%, 40%);
             @include flex(0, center, 0, 0);
         }
 
@@ -153,13 +152,13 @@ body, html {
 
 #menu {
     color: color(white1);
-    height: 130vh;
+    @include size(130vh, 100%);
     background-image: url(../img/menu-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 
     .menu-main {
-        height: 30%;
+        @include size(30%, 100%);
         @include flex(center, 0, center, wrap);
 
         h3, p {
@@ -179,8 +178,7 @@ body, html {
             
             hr {
                 background-color: color(lemon);
-                width: 50px;
-                height: 2px;
+                @include size(2px, 50px);
                 border: none;
             }
         }
@@ -191,23 +189,20 @@ body, html {
     }
 
     .menu-card {
-        height: 70%;
-        background-color:color(white1);
+        @include size(70%, 100%);
         @include flex(space-evenly, 0, 0, wrap);
-
+        background-color:color(white1);
         color: color(dark-grey);
 
         .menu-card-column {
-            width: 40%;
-            height: 100%;
+            @include size(100%, 40%);
             @include flex(center, center, 0, 0);
 
             .menu-card-container {
-                height: 90%;
-                width: 90%;
+                @include size(90%, 90%);
 
                 .menu-card-title {
-                    height: 15%;
+                    @include size(15%, 100%);
                     @include flex(center, 0, space-evenly, wrap);
 
                     h3 {
@@ -220,19 +215,18 @@ body, html {
                     
                     hr {
                         background-color: color(lemon);
-                        width: 50px;
-                        height: 2px;
+                        @include size(2px, 50px);
                         border: none;
                     }
                 }
                 .menu-card-dishes {
-                    height: 85%;
+                    @include size(85%, 100%);
 
                     .dish-container {
-                        height: 20%;
+                        @include size(20%, 100%);
 
                         .dish-name {
-                            height: 35%;
+                            @include size(35%, 100%);
                             border-bottom: 2px dotted color(light-grey);
                             font-size: 1.8vw;
                             font-weight: bold;
@@ -249,7 +243,7 @@ body, html {
                         }
 
                         .dish-description {
-                            height: 65%;
+                            @include size(65%, 100%);
                             font-size: 1.3vw;
                             font-style: italic;
                         }
@@ -262,14 +256,14 @@ body, html {
 
 
 #gallery {
-    height: 200vh;
+    @include size(200vh, 100%);
     background-image: url(../img/gallery-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: color(white1);
 
     .gallery-main {
-        height: 23%;
+        @include size(23%, 100%);
         @include flex(center, 0, center, wrap);
 
         h3, p {
@@ -289,8 +283,7 @@ body, html {
             
             hr {
                 background-color: color(lemon);
-                width: 50px;
-                height: 2px;
+                @include size(2px, 50px);
                 border: none;
             }
         }
@@ -302,44 +295,19 @@ body, html {
 
     .gallery-photos {
         background-color: color(white1);
-        height: 77%;
-        @include flex(center, 0, 0, wrap);
-
-        .gallery-categories {
-            height: 10%;
-            width: 60%;
-            @include flex(space-evenly, flex-end, 0, 0);
-
-            a {
-                width: 20%;
-                height: 40%;
-                font-size: 1.6vw;
-                text-decoration: none;
-                color: color(middle-grey);
-                background-color: color(light-grey);
-                @include flex(center, center, 0, 0);
-                text-transform: uppercase;
-            }
-
-            a:hover {
-                background-color: color(lemon);
-                color: color(white1);
-            }
-        }
+        @include size(77%, 100%);
+        @include flex(center, center, 0, wrap);
 
         .gallery-container {
-            height: 80%;
-            width: 80%;
+            @include size(90%, 80%);
             @include flex(space-evenly, 0, space-evenly, wrap);
 
             a {
-                height: 20%;
-                width: 30%;
+                @include size(21%, 30%);
                 position: relative;
 
                 img {
-                    height: 100%;
-                    width: 100%;
+                    @include size(100%, 100%);
                     z-index: 1;
                 }
 
@@ -348,8 +316,7 @@ body, html {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    height: 100%;
-                    width: 100%;
+                    @include size(100%, 100%);
                     opacity: 0;
                     font-size: 2.5vw;
                     font-weight: bold;
@@ -368,10 +335,10 @@ body, html {
 }
 
 #contact {
-    height: 50vh;
+    @include size(50vh, 100%);
 
     .contact-phone {
-        height: 45%;
+        @include size(45%, 100%);
         background-color: color(lemon);
         color: color(white1);
         @include flex(center, center, 0, 0);
@@ -384,15 +351,14 @@ body, html {
     }
 
     .contact-address {
-        height: 55%;
+        @include size(55%, 100%);
         display: flex;
         background-color: color(dark-grey);
         color: white;
         @include flex(center, flex-start, 0, 0);
 
         .address-section {
-            width: 30%;
-            height: 80%;
+            @include size(80%, 30%);
             @include flex(center, center, 0, wrap);
 
             h3, p {
@@ -401,8 +367,7 @@ body, html {
             }
 
             h3 {
-                width: 100%;
-                height: 60%;
+                @include size(60%, 100%);
                 margin: 0;
                 font-size: 2vw;
                 color: color(lemon);
@@ -412,7 +377,7 @@ body, html {
 
             p {
                 margin: 0;
-                height: 40%;
+                @include size(40%, 100%);
             }
         }
     }

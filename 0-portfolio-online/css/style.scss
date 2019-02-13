@@ -200,6 +200,9 @@ body, html {
             @include size(40%, 40%);
             position: relative;
             border-radius: 3%;
+            -webkit-box-shadow: 9px 10px 34px 5px rgba(107,101,107,0.79);
+            -moz-box-shadow: 9px 10px 34px 5px rgba(107,101,107,0.79);
+            box-shadow: 9px 10px 34px 5px rgba(107,101,107,0.79);
 
             @include desktop(650px) {
                 @include size(20%, 80%);

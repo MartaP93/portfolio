@@ -1,5 +1,7 @@
 'use strict';
 
+
+// SMOOTH SCROLL
 var nav = $('.nav-bar');
 
 $(document).ready(function () {
@@ -15,9 +17,6 @@ $(document).ready(function () {
 
     nav.localScroll();
 })
-
-
-
 
 
 // NIE DZIAŁA
