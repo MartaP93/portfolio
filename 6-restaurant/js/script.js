@@ -17,18 +17,3 @@ $(document).ready(function () {
 
     nav.localScroll();
 })
-
-
-// NIE DZIAŁA
-var links = $(".link");
-
-// links.each(function () {
-//     $(this).on("click", function () {
-//         $(this).addClass("active-link")
-//     });
-// });
-
-links.click(function () {
-    $(this).css("color", "");
-    $(this).css("color", "rgb(114, 164, 17)");
-});
